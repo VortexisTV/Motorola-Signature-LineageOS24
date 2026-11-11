@@ -1,0 +1,4918 @@
+[
+ {
+  "name": "ro.product.system.brand",
+  "stock": [
+   [
+    "system",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system.device",
+  "stock": [
+   [
+    "system",
+    "msi"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system.manufacturer",
+  "stock": [
+   [
+    "system",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system.model",
+  "stock": [
+   [
+    "system",
+    "motorola signature"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system.name",
+  "stock": [
+   [
+    "system",
+    "vantage_g"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.product.cpu.abilist",
+  "stock": [
+   [
+    "system",
+    "arm64-v8a"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.product.cpu.abilist32",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.product.cpu.abilist64",
+  "stock": [
+   [
+    "system",
+    "arm64-v8a"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.date",
+  "stock": [
+   [
+    "system",
+    "Wed Aug 26 07:56:47 CDT 2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.date.utc",
+  "stock": [
+   [
+    "system",
+    "1787749007"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.fingerprint",
+  "stock": [
+   [
+    "system",
+    "motorola/vantage_g/msi:17/A171WVM-16-ST1.1/b328b:user/release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.id",
+  "stock": [
+   [
+    "system",
+    "A171WVM-16-ST1.1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.meta.build.id",
+  "stock": [
+   [
+    "system",
+    "A171WVH.21-16-16"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.uuid",
+  "stock": [
+   [
+    "system",
+    "MlchnzOml62P8re5F4YgkPNNeBD06upE8G3MtunKl4M"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.tags",
+  "stock": [
+   [
+    "system",
+    "release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.type",
+  "stock": [
+   [
+    "system",
+    "user"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.incremental",
+  "stock": [
+   [
+    "system",
+    "b328b"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.release",
+  "stock": [
+   [
+    "system",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.release_or_codename",
+  "stock": [
+   [
+    "system",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.sdk",
+  "stock": [
+   [
+    "system",
+    "37"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.sdk_full",
+  "stock": [
+   [
+    "system",
+    "37.0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.uuid",
+  "stock": [
+   [
+    "system",
+    "MlchnzOml62P8re5F4YgkPNNeBD06upE8G3MtunKl4M"
+   ],
+   [
+    "product",
+    "MlchnzOml62P8re5F4YgkPNNeBD06upE8G3MtunKl4M"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.sdk",
+  "stock": [
+   [
+    "system",
+    "37"
+   ],
+   [
+    "product",
+    "37"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/apex/com.google.android.widevine-13130248.apex",
+   "vendor/apex/com.motorola.modules.attiqi-signed.apex",
+   "vendor/bin/rkp_factory_extraction_tool64",
+   "vendor/etc/init/hw/init.mmi.tcmd.rc",
+   "vendor/lib64/android.hardware.bluetooth-V1-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.audio-V5-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.lmp_event-V1-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.ranging-V2-ndk.so",
+   "vendor/lib64/android.hardware.contexthub-V3-ndk.so",
+   "vendor/lib64/android.hardware.drm-V1-ndk.so",
+   "vendor/lib64/android.hardware.graphics.allocator-V1-ndk.so",
+   "vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so",
+   "vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so",
+   "vendor/lib64/android.hardware.media.c2-V1-ndk.so",
+   "vendor/lib64/android.hardware.nfc-V2-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V1-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V2-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V3-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V4-ndk.so"
+  ],
+  "vendor_reader_count": 40
+ },
+ {
+  "name": "ro.build.version.sdk_full",
+  "stock": [
+   [
+    "system",
+    "37.0"
+   ],
+   [
+    "product",
+    "37.0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.preview_sdk",
+  "stock": [
+   [
+    "system",
+    "0"
+   ],
+   [
+    "product",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.preview_sdk_fingerprint",
+  "stock": [
+   [
+    "system",
+    "REL"
+   ],
+   [
+    "product",
+    "REL"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.codename",
+  "stock": [
+   [
+    "system",
+    "REL"
+   ],
+   [
+    "product",
+    "REL"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/apex/com.google.android.widevine-13130248.apex",
+   "vendor/apex/com.motorola.modules.attiqi-signed.apex",
+   "vendor/bin/init.qcom.post_boot.sh",
+   "vendor/bin/rkp_factory_extraction_tool64",
+   "vendor/lib64/android.hardware.bluetooth-V1-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.audio-V5-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.lmp_event-V1-ndk.so",
+   "vendor/lib64/android.hardware.bluetooth.ranging-V2-ndk.so",
+   "vendor/lib64/android.hardware.contexthub-V3-ndk.so",
+   "vendor/lib64/android.hardware.drm-V1-ndk.so",
+   "vendor/lib64/android.hardware.graphics.allocator-V1-ndk.so",
+   "vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so",
+   "vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so",
+   "vendor/lib64/android.hardware.media.c2-V1-ndk.so",
+   "vendor/lib64/android.hardware.nfc-V2-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V1-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V2-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V3-ndk.so",
+   "vendor/lib64/android.hardware.security.keymint-V4-ndk.so"
+  ],
+  "vendor_reader_count": 36
+ },
+ {
+  "name": "ro.build.version.all_codenames",
+  "stock": [
+   [
+    "system",
+    "REL"
+   ],
+   [
+    "product",
+    "REL"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.known_codenames",
+  "stock": [
+   [
+    "system",
+    "Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun"
+   ],
+   [
+    "product",
+    "Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.release",
+  "stock": [
+   [
+    "system",
+    "17"
+   ],
+   [
+    "product",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/hw/android.hardware.security.onekeymint-service-qti",
+   "vendor/bin/sigma_dut",
+   "vendor/bin/xtra-daemon",
+   "vendor/lib64/lib-imsservice.so",
+   "vendor/lib64/libchrome.so",
+   "vendor/lib64/libjc_keymint-thales.so",
+   "vendor/lib64/libkeymint.so",
+   "vendor/lib64/libpuresoftkeymasterdevice.so",
+   "vendor/lib64/libqcrilNr.so",
+   "vendor/lib64/libqtikeymaster4.so",
+   "vendor/lib64/libstagefright_foundation.so"
+  ],
+  "vendor_reader_count": 11
+ },
+ {
+  "name": "ro.build.version.release_or_codename",
+  "stock": [
+   [
+    "system",
+    "17"
+   ],
+   [
+    "product",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/init/init.qti.media.rc"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "ro.build.version.release_or_preview_display",
+  "stock": [
+   [
+    "system",
+    "17"
+   ],
+   [
+    "product",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.security_patch",
+  "stock": [
+   [
+    "system",
+    "2026-08-01"
+   ],
+   [
+    "product",
+    "2026-08-01"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/hw/android.hardware.security.onekeymint-service-qti",
+   "vendor/bin/xtra-daemon",
+   "vendor/lib64/libjc_keymint-thales.so",
+   "vendor/lib64/libkeymint.so",
+   "vendor/lib64/libpuresoftkeymasterdevice.so",
+   "vendor/lib64/libqtikeymaster4.so"
+  ],
+  "vendor_reader_count": 6
+ },
+ {
+  "name": "ro.build.version.min_supported_target_sdk",
+  "stock": [
+   [
+    "system",
+    "28"
+   ],
+   [
+    "product",
+    "28"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.date",
+  "stock": [
+   [
+    "system",
+    "Wed Aug 26 07:56:47 CDT 2026"
+   ],
+   [
+    "product",
+    "Wed Aug 26 07:56:47 CDT 2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/libchrome.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "ro.build.date.utc",
+  "stock": [
+   [
+    "system",
+    "1787749007"
+   ],
+   [
+    "product",
+    "1787749007"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/time_daemon",
+   "vendor/lib64/libqcrilNr.so"
+  ],
+  "vendor_reader_count": 2
+ },
+ {
+  "name": "ro.build.type",
+  "stock": [
+   [
+    "system",
+    "user"
+   ],
+   [
+    "product",
+    "user"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/batt_health",
+   "vendor/bin/init.mmi.usb.sh",
+   "vendor/bin/init.qcom.post_boot.sh",
+   "vendor/bin/init.qcom.sh",
+   "vendor/bin/lowi-server",
+   "vendor/bin/qcc-vendor",
+   "vendor/bin/qmipriod",
+   "vendor/bin/rkp_factory_extraction_tool64",
+   "vendor/bin/xtra-daemon",
+   "vendor/etc/init/hw/init.mmi.chipset.rc",
+   "vendor/etc/init/hw/init.mmi.overlay.rc",
+   "vendor/etc/init/hw/init.qcom.rc",
+   "vendor/lib64/hw/camera.qcom.core.so",
+   "vendor/lib64/libadsprpc.so",
+   "vendor/lib64/libcamxsettingsmanager.so",
+   "vendor/lib64/libcdsprpc.so",
+   "vendor/lib64/libcplc_matcher.so",
+   "vendor/lib64/libgdix_tsc.so",
+   "vendor/lib64/libgps.utils.so",
+   "vendor/lib64/libmdsprpc.so"
+  ],
+  "vendor_reader_count": 25
+ },
+ {
+  "name": "ro.build.user",
+  "stock": [
+   [
+    "system",
+    "hudsoncm"
+   ],
+   [
+    "product",
+    "hudsoncm"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/qcc-vendor"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "ro.build.host",
+  "stock": [
+   [
+    "system",
+    "ilclbld189"
+   ],
+   [
+    "product",
+    "ilclbld189"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.tags",
+  "stock": [
+   [
+    "system",
+    "release-keys"
+   ],
+   [
+    "product",
+    "release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/init.mmi.boot.sh",
+   "vendor/lib64/hw/camera.qcom.core.so",
+   "vendor/lib64/hw/camera.qcom.so",
+   "vendor/lib64/hw/com.qti.chi.override.so",
+   "vendor/lib64/libcamxsettingsmanager.so",
+   "vendor/lib64/libchifeature2.so"
+  ],
+  "vendor_reader_count": 6
+ },
+ {
+  "name": "ro.product.cpu.abi",
+  "stock": [
+   [
+    "system",
+    "arm64-v8a"
+   ],
+   [
+    "product",
+    "arm64-v8a"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/apex/com.google.android.widevine-13130248.apex",
+   "vendor/etc/boringssl_self_test.zygote64.rc",
+   "vendor/etc/boringssl_self_test.zygote64_32.rc"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "ro.product.locale",
+  "stock": [
+   [
+    "system",
+    "en-US"
+   ],
+   [
+    "product",
+    "en-US"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.wifi.channels",
+  "stock": [
+   [
+    "system",
+    ""
+   ],
+   [
+    "product",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.version.ci",
+  "stock": [
+   [
+    "system",
+    "16"
+   ],
+   [
+    "product",
+    "16"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "rild.libpath",
+  "stock": [
+   [
+    "system",
+    "/vendor/lib64/libril-qc-hal-qmi.so"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/init/hw/init.qcom.rc"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.rild.nitz_plmn",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_long_ons_0",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_long_ons_1",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_long_ons_2",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_long_ons_3",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_short_ons_0",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_short_ons_1",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_short_ons_2",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rild.nitz_short_ons_3",
+  "stock": [
+   [
+    "system",
+    ""
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ril.subscription.types",
+  "stock": [
+   [
+    "system",
+    "NV,RUIM"
+   ],
+   [
+    "product",
+    "RUIM"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.telephony.default_network",
+  "stock": [
+   [
+    "system",
+    "26,26"
+   ],
+   [
+    "product",
+    "26,26"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/init/hw/init.mmi.tcmd.rc"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "dalvik.vm.heapsize",
+  "stock": [
+   [
+    "system",
+    "36m"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/libchrome.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "dalvik.vm.dex2oat64.enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dev.pm.dyn_samplingrate",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "qcom.hw.aac.encoder",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.cne.feature",
+  "stock": [
+   [
+    "system",
+    "1"
+   ],
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/cnd",
+   "vendor/etc/selinux/vendor_property_contexts",
+   "vendor/lib64/libcne.so",
+   "vendor/lib64/libwqe.so"
+  ],
+  "vendor_reader_count": 4
+ },
+ {
+  "name": "media.stagefright.enable-player",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.enable-http",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.enable-aac",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.enable-qcp",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.enable-fma2dp",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.enable-scan",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.thumbnail.prefer_hw_codecs",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "mmp.enable.3g2",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.aac_51_output_enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.settings.xml",
+  "stock": [
+   [
+    "system",
+    "/vendor/etc/media_profiles_vendor.xml"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "vendor.mm.enable.qcom_parser",
+  "stock": [
+   [
+    "system",
+    "16777215"
+   ],
+   [
+    "system_ext",
+    "33554978"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/init/init.qti.media.rc"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.mm.enable.prefetch",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.vendor.use_data_netmgrd",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.data.mode",
+  "stock": [
+   [
+    "system",
+    "concurrent"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/init.class_main.sh"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.timed.enable",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.opengles.version",
+  "stock": [
+   [
+    "system",
+    "196610"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/init/hw/init.qcom.rc"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "telephony.lteOnCdmaDevice",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.fuse_sdcard",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.bluetooth.library_name",
+  "stock": [
+   [
+    "system",
+    "libbluetooth_qti.so"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.btstack.aac_frm_ctl.enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.rmnet.data.enable",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.wda.enable",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.dl_mode",
+  "stock": [
+   [
+    "system",
+    "5"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.ul_mode",
+  "stock": [
+   [
+    "system",
+    "5"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.agg.dl_pkt",
+  "stock": [
+   [
+    "system",
+    "10"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.agg.dl_size",
+  "stock": [
+   [
+    "system",
+    "4096"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.mux_count",
+  "stock": [
+   [
+    "system",
+    "8"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.iwlan_mux",
+  "stock": [
+   [
+    "system",
+    "9"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.data.df.dev_name",
+  "stock": [
+   [
+    "system",
+    "rmnet_usb0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.wfd.virtual",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "debug.sf.enable_hwc_vds",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "debug.sf.latch_unsignaled",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "tunnel.audio.encode",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "use.voice.path.for.pcm.voip",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.nfc.port",
+  "stock": [
+   [
+    "system",
+    "I2C"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.nfc.secure_nfc",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "sys.qca1530",
+  "stock": [
+   [
+    "system",
+    "detect"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.debug.coresight.config",
+  "stock": [
+   [
+    "system",
+    "stm-events"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.texture_cache_size",
+  "stock": [
+   [
+    "system",
+    "72"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/init.qcom.post_boot.sh"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "ro.hwui.layer_cache_size",
+  "stock": [
+   [
+    "system",
+    "48"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.r_buffer_cache_size",
+  "stock": [
+   [
+    "system",
+    "8"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.path_cache_size",
+  "stock": [
+   [
+    "system",
+    "32"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.gradient_cache_size",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.drop_shadow_cache_size",
+  "stock": [
+   [
+    "system",
+    "6"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.texture_cache_flushrate",
+  "stock": [
+   [
+    "system",
+    "0.4"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.text_small_cache_width",
+  "stock": [
+   [
+    "system",
+    "1024"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.text_small_cache_height",
+  "stock": [
+   [
+    "system",
+    "1024"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.text_large_cache_width",
+  "stock": [
+   [
+    "system",
+    "2048"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.hwui.text_large_cache_height",
+  "stock": [
+   [
+    "system",
+    "1024"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "debug.hwui.skia_atrace_enabled",
+  "stock": [
+   [
+    "system",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "config.disable_rtt",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.force_sw_gles",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.radio.atfwd.start",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/init.qcom.early_boot.sh",
+   "vendor/etc/init/hw/init.qcom.rc"
+  ],
+  "vendor_reader_count": 2
+ },
+ {
+  "name": "ro.kernel.qemu.gles",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "qemu.hw.mainkeys",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/init.qcom.early_boot.sh",
+   "vendor/bin/init.qcom.sh"
+  ],
+  "vendor_reader_count": 2
+ },
+ {
+  "name": "vendor.camera.aux.packagelist",
+  "stock": [
+   [
+    "system",
+    "org.codeaurora.snapcam"
+   ],
+   [
+    "system_ext",
+    "com.motorola.camera3,com.motorola.camera5,com.motorola.motocit"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.camera.privapp.list",
+  "stock": [
+   [
+    "system",
+    "org.codeaurora.snapcam"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.overlay.izat.optin",
+  "stock": [
+   [
+    "system",
+    "rro"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.property_source_order",
+  "stock": [
+   [
+    "system",
+    "odm,vendor,product,system_ext,system"
+   ],
+   [
+    "product",
+    "product,odm,vendor,system_ext,system"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "debug.stagefright.ccodec",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.media.recorder-max-base-layer-fps",
+  "stock": [
+   [
+    "system",
+    "60"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.charger.enable_suspend",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.launcher.blur.appLaunch",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.vendor.qti.va_aosp.support",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/libqti_vndfwk_detect.so",
+   "vendor/lib64/libqti_vndfwk_detect_vendor.so"
+  ],
+  "vendor_reader_count": 2
+ },
+ {
+  "name": "ro.camera.default_app_social_media_parity_enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.camera.cfa.packagelist",
+  "stock": [
+   [
+    "system",
+    "com.motorola.coresettingsext,com.motorola.camera3,com.motorola.camera5,com.motorola.actions"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.treble.enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/apex/com.google.android.widevine-13130248.apex",
+   "vendor/apex/com.motorola.modules.attiqi-signed.apex",
+   "vendor/lib64/libcutils.so"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "ro.llndk.api_level",
+  "stock": [
+   [
+    "system",
+    "202604"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.actionable_compatible_property.enabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.postinstall.fstab.prefix",
+  "stock": [
+   [
+    "system",
+    "/system"
+   ],
+   [
+    "product",
+    "/product"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.secure",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "security.perf_harden",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.adb.secure",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.allow.mock.location",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.debuggable",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/avf_qcvm_manager",
+   "vendor/bin/hw/audiohalservice.qti",
+   "vendor/bin/ims_rtp_daemon",
+   "vendor/bin/init.mmi.usb.sh",
+   "vendor/bin/init.qcom.class_core.sh",
+   "vendor/bin/lowi-server",
+   "vendor/lib64/hw/vulkan.adreno.so",
+   "vendor/lib64/lib-imscommon.so",
+   "vendor/lib64/lib-imsdcservice.so",
+   "vendor/lib64/lib-imsdpl.so",
+   "vendor/lib64/lib-imsservice.so",
+   "vendor/lib64/libGPQeSE.so",
+   "vendor/lib64/libRSCpuRef.so",
+   "vendor/lib64/libadsprpc.so",
+   "vendor/lib64/libar-pal.so",
+   "vendor/lib64/libcdsprpc.so",
+   "vendor/lib64/libhidlbase.so",
+   "vendor/lib64/libjc_keymint-thales.so",
+   "vendor/lib64/liblog_vendor.so",
+   "vendor/lib64/libmdpfmgr.so"
+  ],
+  "vendor_reader_count": 26
+ },
+ {
+  "name": "net.bt.name",
+  "stock": [
+   [
+    "system",
+    "Android"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.force.debuggable",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.apex.updatable",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.device_config.runtime_native_boot.iorap_perfetto_enable",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system.build.version.qcom",
+  "stock": [
+   [
+    "system",
+    "AU_LINUX_ANDROID_LA.QSSI.17.0.R1.11.00.00.1421.072"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "hwservicemanager.always_sets_disabled",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "debug.atrace.tags.enableflags",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/apex/com.google.android.widevine-13130248.apex",
+   "vendor/apex/com.motorola.modules.attiqi-signed.apex",
+   "vendor/lib64/libcutils.so"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "persist.traced.enable",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.surface_flinger.game_default_frame_rate_override",
+  "stock": [
+   [
+    "system",
+    "60"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.enabled",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.max_log_files",
+  "stock": [
+   [
+    "system",
+    "10"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.max_log_file_size_kb",
+  "stock": [
+   [
+    "system",
+    "10240"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.batching.enabled",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.batching.max_batch_size",
+  "stock": [
+   [
+    "system",
+    "100"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.pcc.audit_mode.batching.flush_time_ms",
+  "stock": [
+   [
+    "system",
+    "10000"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.image-dex2oat-Xms",
+  "stock": [
+   [
+    "system",
+    "64m"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.image-dex2oat-Xmx",
+  "stock": [
+   [
+    "system",
+    "512m"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dex2oat-Xms",
+  "stock": [
+   [
+    "system",
+    "64m"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dex2oat-Xmx",
+  "stock": [
+   [
+    "system",
+    "512m"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usejit",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dexopt.secondary",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dexopt.thermal-cutoff",
+  "stock": [
+   [
+    "system",
+    "2"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.appimageformat",
+  "stock": [
+   [
+    "system",
+    "lz4"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.dalvik.vm.native.bridge",
+  "stock": [
+   [
+    "system",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.post-boot",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.first-boot",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.boot-after-ota",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.boot-after-mainline-update",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install",
+  "stock": [
+   [
+    "system",
+    "speed-profile"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install-fast",
+  "stock": [
+   [
+    "system",
+    "skip"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install-bulk",
+  "stock": [
+   [
+    "system",
+    "speed-profile"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install-bulk-secondary",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install-bulk-downgraded",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.install-bulk-secondary-downgraded",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.bg-dexopt",
+  "stock": [
+   [
+    "system",
+    "speed-profile"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.ab-ota",
+  "stock": [
+   [
+    "system",
+    "speed-profile"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.inactive",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.cmdline",
+  "stock": [
+   [
+    "system",
+    "verify"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "pm.dexopt.shared",
+  "stock": [
+   [
+    "system",
+    "speed"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dex2oat-resolve-startup-strings",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dex2oat-max-image-block-size",
+  "stock": [
+   [
+    "system",
+    "524288"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.minidebuginfo",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.dex2oat-minidebuginfo",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.madvise.vdexfile.size",
+  "stock": [
+   [
+    "system",
+    "104857600"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.madvise.odexfile.size",
+  "stock": [
+   [
+    "system",
+    "104857600"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usap_pool_enabled",
+  "stock": [
+   [
+    "system",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usap_refill_threshold",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usap_pool_size_max",
+  "stock": [
+   [
+    "system",
+    "3"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usap_pool_size_min",
+  "stock": [
+   [
+    "system",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.usap_pool_refill_delay_ms",
+  "stock": [
+   [
+    "system",
+    "3000"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.useartservice",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "dalvik.vm.enable_pr_dexopt",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.cp_system_other_odex",
+  "stock": [
+   [
+    "system",
+    "1"
+   ],
+   [
+    "system_ext",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "apexd.config.compressed_apex",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vold.ecryptfs_supported",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.product_wave",
+  "stock": [
+   [
+    "system",
+    "2026.1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.is_production",
+  "stock": [
+   [
+    "system",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/hw/android.hardware.biometrics.face-service.face-isv",
+   "vendor/etc/init/android.hardware.secure_element-service.qti.rc",
+   "vendor/etc/init/hw/init.mmi.chipset.rc",
+   "vendor/etc/init/hw/init.mmi.overlay.rc",
+   "vendor/etc/init/hw/init.target.rc",
+   "vendor/etc/init/init.mmi.vendor.bt.rc"
+  ],
+  "vendor_reader_count": 6
+ },
+ {
+  "name": "ro.build.backported_fixes.alias_bitset.long_list",
+  "stock": [
+   [
+    "system",
+    "114"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system_ext.brand",
+  "stock": [
+   [
+    "system_ext",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system_ext.device",
+  "stock": [
+   [
+    "system_ext",
+    "msi"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system_ext.manufacturer",
+  "stock": [
+   [
+    "system_ext",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system_ext.model",
+  "stock": [
+   [
+    "system_ext",
+    "motorola signature"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.system_ext.name",
+  "stock": [
+   [
+    "system_ext",
+    "vantage_g"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.date",
+  "stock": [
+   [
+    "system_ext",
+    "Wed Aug 26 07:56:47 CDT 2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.date.utc",
+  "stock": [
+   [
+    "system_ext",
+    "1787749007"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.fingerprint",
+  "stock": [
+   [
+    "system_ext",
+    "motorola/vantage_g/msi:17/A171WVM-16-ST1.1/b328b:user/release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.id",
+  "stock": [
+   [
+    "system_ext",
+    "A171WVM-16-ST1.1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.uuid",
+  "stock": [
+   [
+    "system_ext",
+    "MlchnzOml62P8re5F4YgkPNNeBD06upE8G3MtunKl4M"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.tags",
+  "stock": [
+   [
+    "system_ext",
+    "release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.type",
+  "stock": [
+   [
+    "system_ext",
+    "user"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.version.incremental",
+  "stock": [
+   [
+    "system_ext",
+    "b328b"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.version.release",
+  "stock": [
+   [
+    "system_ext",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.version.release_or_codename",
+  "stock": [
+   [
+    "system_ext",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.version.sdk",
+  "stock": [
+   [
+    "system_ext",
+    "37"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.system_ext.build.version.sdk_full",
+  "stock": [
+   [
+    "system_ext",
+    "37.0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.deep_buffer.media",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ],
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.offload.disable",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/libmiracast.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "audio.offload.video",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.offload.min.duration.secs",
+  "stock": [
+   [
+    "system_ext",
+    "60"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.offload.gapless.enabled",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.bootupvolume",
+  "stock": [
+   [
+    "system_ext",
+    "5"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.isolated_compilation_enabled",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.ihaladaptervendorextension_enabled",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.sap.server.enabled",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.pbap.sim.enabled",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.bluetooth.leaudio_offload.supported",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/hw/libaudiocorehal.default.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "bluetooth.device.class_of_device",
+  "stock": [
+   [
+    "system_ext",
+    "90,2,12"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.bluetooth.leaudio_offload.disabled",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/hw/libaudiocorehal.default.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.bluetooth.leaudio.allow.multiple.context",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.bluetooth.leaudio.bypass_allow_list",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.leaudio.dual_bidirection_swb.supported",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.bluetooth.leaudio.notify.idle.during.call",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.bluetooth.haltest",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.a2dp.source.lhdcv5_priority.config",
+  "stock": [
+   [
+    "system_ext",
+    "10003"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.avrcp.target.safe_media_volume.config",
+  "stock": [
+   [
+    "system_ext",
+    "10"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.hfp.codec_aptx_voice.enabled",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.hfp.swb.aptx.power_management.enabled",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.dpm.feature",
+  "stock": [
+   [
+    "system_ext",
+    "11"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/qcril_database/qcrilNr.db",
+   "vendor/etc/qcril_database/upgrade/config/0012.0_config.sql",
+   "vendor/lib64/libril-db.so",
+   "vendor/lib64/vendor.libdpmframework.so"
+  ],
+  "vendor_reader_count": 4
+ },
+ {
+  "name": "ro.mot.security.enable",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.virtual_ab.merge_delay_seconds",
+  "stock": [
+   [
+    "system_ext",
+    "300"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.boot.wificountrycode",
+  "stock": [
+   [
+    "system_ext",
+    "00"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.camera.expose.aux",
+  "stock": [
+   [
+    "system_ext",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/selinux/vendor_property_contexts"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "vendor.camera.aux.packagelist2",
+  "stock": [
+   [
+    "system_ext",
+    "com.motorola.ccc,com.android.settings,com.motorola.motointelligence"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/selinux/vendor_property_contexts"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "dalvik.vm.systemuicompilerfilter",
+  "stock": [
+   [
+    "system_ext",
+    "speed"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio.dualmic.config",
+  "stock": [
+   [
+    "system_ext",
+    "endfire"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio.fluence.voicecall",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio.fluence.voicecomm",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio.fluence.voicerec",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio.fluence.speaker",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "vendor.mm.en.sec.smoothstreaming",
+  "stock": [
+   [
+    "system_ext",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.recorder.show_manufacturer_and_model",
+  "stock": [
+   [
+    "system_ext",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "vendor.audio.parser.ip.buffer.size",
+  "stock": [
+   [
+    "system_ext",
+    "262144"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.audio_fx.current",
+  "stock": [
+   [
+    "system_ext",
+    "mmi"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "vendor.audio.snd_card.open.retries",
+  "stock": [
+   [
+    "system_ext",
+    "50"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.platform.build_id",
+  "stock": [
+   [
+    "system_ext",
+    "MW-512"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.product.brand",
+  "stock": [
+   [
+    "product",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.product.manufacturer",
+  "stock": [
+   [
+    "product",
+    "motorola"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.product.model",
+  "stock": [
+   [
+    "product",
+    "motorola signature"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.product.name",
+  "stock": [
+   [
+    "product",
+    "vantage_g"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.date",
+  "stock": [
+   [
+    "product",
+    "Wed Aug 26 07:56:47 CDT 2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.date.utc",
+  "stock": [
+   [
+    "product",
+    "1787749007"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.fingerprint",
+  "stock": [
+   [
+    "product",
+    "motorola/vantage_g/msi:17/A171WVM-16-ST1.1/b328b:user/release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.id",
+  "stock": [
+   [
+    "product",
+    "A171WVM-16-ST1.1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.uuid",
+  "stock": [
+   [
+    "product",
+    "MlchnzOml62P8re5F4YgkPNNeBD06upE8G3MtunKl4M"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.tags",
+  "stock": [
+   [
+    "product",
+    "release-keys"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.type",
+  "stock": [
+   [
+    "product",
+    "user"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.version.incremental",
+  "stock": [
+   [
+    "product",
+    "b328b"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.version.release",
+  "stock": [
+   [
+    "product",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.version.release_or_codename",
+  "stock": [
+   [
+    "product",
+    "17"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.version.sdk",
+  "stock": [
+   [
+    "product",
+    "37"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.version.sdk_full",
+  "stock": [
+   [
+    "product",
+    "37.0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.page_size",
+  "stock": [
+   [
+    "product",
+    "4096"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.build.characteristics",
+  "stock": [
+   [
+    "product",
+    "nosdcard"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.ab_ota_partitions",
+  "stock": [
+   [
+    "product",
+    "init_boot,product,pvmfw,system,system_ext,vbmeta_system"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.cpu.pagesize.max",
+  "stock": [
+   [
+    "product",
+    "16384"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.build.no_bionic_page_size_macro",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.dalvik.vm.enable_uffd_gc",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.rcs.singlereg.feature",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.radio.force_gba_over_isim_app",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/qcril_database/qcrilNr.db",
+   "vendor/etc/qcril_database/upgrade/config/0013.0_config.sql",
+   "vendor/lib64/libril-db.so"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "persist.vendor.radio.jbims",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.vt.supported",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.ims.playout_delay",
+  "stock": [
+   [
+    "product",
+    "50"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/lib-imsvtcore.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.vendor.ims.cam_sensor_delay",
+  "stock": [
+   [
+    "product",
+    "20"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.ims.display_delay",
+  "stock": [
+   [
+    "product",
+    "40"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/lib-imsvtcore.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "persist.vendor.data.iwlan.enable",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.sys.cnd.iwlan",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.vendor.cne.logging.qxdm",
+  "stock": [
+   [
+    "product",
+    "3974"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/etc/selinux/vendor_property_contexts",
+   "vendor/lib64/libcne.so",
+   "vendor/lib64/libcneapiclient.so"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "ro.product.dolbyvision.feature.coveryall",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.dolby.upmapping.feature",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.dolby.upmapping.filter.enable",
+  "stock": [
+   [
+    "product",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/libc2filterplugin.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "ro.media.codec.max_mbps",
+  "stock": [
+   [
+    "product",
+    "3916800"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.wallpaper",
+  "stock": [
+   [
+    "product",
+    "product/media/wallpapers/default_moto_wallpaper.jpg"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.ime.kb_pad_port_l",
+  "stock": [
+   [
+    "product",
+    "11"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.ime.kb_pad_port_r",
+  "stock": [
+   [
+    "product",
+    "11"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.soc.mkt_name",
+  "stock": [
+   [
+    "product",
+    "Qualcomm Snapdragon 8 Gen 5"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.dolby_vision.enabled",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.quick_start.oem_id",
+  "stock": [
+   [
+    "product",
+    "0008"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.quick_start.device_id",
+  "stock": [
+   [
+    "product",
+    "vantage"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_asr.supported",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_asr_ec.supported",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_checkin.support",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_dyeq.supported",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.satc.supported",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.camera.notify_nfc",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "llm_heap.dfb.enable",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.force",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.clientids.schema.version",
+  "stock": [
+   [
+    "product",
+    "2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.launch_year",
+  "stock": [
+   [
+    "product",
+    "2026"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.product_tier",
+  "stock": [
+   [
+    "product",
+    "3"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.product_tier.supplement",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.search.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.search.ap.widget",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.search.ap.ctos",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.search.ap.lens",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.gemini.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.gemini.ap.lpp",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.gemini.ap.hotword",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.gms.defaults.gemini.nano",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.setupwizard.rotation_locked",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "setupwizard.theme",
+  "stock": [
+   [
+    "product",
+    "glif_expressive"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.opa.eligible_device",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.gmsversion",
+  "stock": [
+   [
+    "product",
+    "17_202606"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.product.gms_premier_tier",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.gwfcactivation.disabled_carriers",
+  "stock": [
+   [
+    "product",
+    "1187,1779,2119,2120,10000,10013,10021,10022,2525,2526,2527,10029,2024,2025,2027,2028,2029,2031,2534,2538,2539,10012,10028,1492,28,1839"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.ime.system_lm_dir",
+  "stock": [
+   [
+    "product",
+    "/product/usr/share/ime/google/d3_lms/"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.lenovo.single_hand",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.ringtone",
+  "stock": [
+   [
+    "product",
+    "Moto.ogg"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.ringtone_2",
+  "stock": [
+   [
+    "product",
+    "Moto.ogg"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.notification_sound",
+  "stock": [
+   [
+    "product",
+    "Hello.ogg"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.config.alarm_alert",
+  "stock": [
+   [
+    "product",
+    "Helium.ogg"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.boot.vendor.overlay.theme",
+  "stock": [
+   [
+    "product",
+    "com.android.internal.systemui.navbar.threebutton"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "setupwizard.feature.enable_quick_start_flow",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "setupwizard.feature.enable_quick_enhanced_biometrics_flow",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "setupwizard.feature.enable_restore_anytime",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.ime.number_row",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.com.google.ime.kb_pad_port_b",
+  "stock": [
+   [
+    "product",
+    "8"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.data_stall.lowest_time",
+  "stock": [
+   [
+    "product",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "remote_provisioning.enable_rkpd",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "remote_provisioning.hostname",
+  "stock": [
+   [
+    "product",
+    "remoteprovisioning.googleapis.com"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "af.fast_track_multiplier",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.sys.noisy.broadcast.delay",
+  "stock": [
+   [
+    "product",
+    "500"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.sys.mute.latency.factor",
+  "stock": [
+   [
+    "product",
+    "2"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.sys.routing.latency",
+  "stock": [
+   [
+    "product",
+    "0"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.sys.offload.pstimeout.secs",
+  "stock": [
+   [
+    "product",
+    "3"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.af.client_heap_size_kbyte",
+  "stock": [
+   [
+    "product",
+    "7168"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "media.stagefright.audio.deep",
+  "stock": [
+   [
+    "product",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "aaudio.mmap_policy",
+  "stock": [
+   [
+    "product",
+    "2"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "aaudio.mmap_exclusive_policy",
+  "stock": [
+   [
+    "product",
+    "2"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "aaudio.hw_burst_min_usec",
+  "stock": [
+   [
+    "product",
+    "2000"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/lib64/hw/libaudiocorehal.qti.so"
+  ],
+  "vendor_reader_count": 1
+ },
+ {
+  "name": "audio.timecheck.timeout_duration_ms",
+  "stock": [
+   [
+    "product",
+    "8000"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "traced.relay_producer_port",
+  "stock": [
+   [
+    "product",
+    "vsock://-1:2010"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.a2dp.source.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.avrcp.target.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.avrcp.controller.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.hfp.ag.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.gatt.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.hid.host.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.hid.device.enabled",
+  "stock": [
+   [
+    "product",
+    "false"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.map.server.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.opp.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.pan.nap.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.pan.panu.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.pbap.server.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.bas.client.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.device_id.vendor_id",
+  "stock": [
+   [
+    "product",
+    "0x001D"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "bluetooth.profile.asha.central.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.wm.extensions.enabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.build.customerid",
+  "stock": [
+   [
+    "product",
+    "global"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/rmt_storage",
+   "vendor/bin/thermal-engine-v2",
+   "vendor/lib64/libqcrilNr.so"
+  ],
+  "vendor_reader_count": 3
+ },
+ {
+  "name": "persist.mot_bt.aptx_cert",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.support_one_handed_mode",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.satellite",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.vendor.radio.imei.sv",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [
+   "vendor/bin/qmi_motext_hook",
+   "vendor/bin/rmt_storage"
+  ],
+  "vendor_reader_count": 2
+ },
+ {
+  "name": "ro.product.hid_ui",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "audio.record.delay",
+  "stock": [
+   [
+    "product",
+    "100"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.monitorWindowRotation",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "masterclear.allow_retain_esim_profiles_after_fdr",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "esim.enable_esim_system_ui_by_default",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.mot.MepEnabled",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.telephony.esim_slot_id",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.carrier_config_controller_support",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.sys.battery_care_dynamic_support",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "persist.mot_bt.phone_audio_crystal_talk",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_aispeech_vow",
+  "stock": [
+   [
+    "product",
+    "true"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "ro.audio.moto_aispeech_mic_cnt",
+  "stock": [
+   [
+    "product",
+    "2"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "remote_provisioning.strongbox.rkp_only",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ },
+ {
+  "name": "remote_provisioning.tee.rkp_only",
+  "stock": [
+   [
+    "product",
+    "1"
+   ]
+  ],
+  "ours": null,
+  "vendor_readers": [],
+  "vendor_reader_count": 0
+ }
+]

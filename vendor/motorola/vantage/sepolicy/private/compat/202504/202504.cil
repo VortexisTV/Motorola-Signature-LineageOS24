@@ -1,0 +1,22 @@
+;; Mapping of our public system_ext types for a vendor policy of version 202504.
+;;
+;; The stock A17 vendor policy (vendor/etc/selinux/plat_sepolicy_vers.txt = 202504) writes its
+;; rules against versioned attributes such as vendor_qtelephony_202504. init loads
+;; /system_ext/etc/selinux/mapping/<vendor version>.cil, but LineageOS 24 generates our mapping
+;; only for its own platform version (202604). For older versions the build takes this file
+;; (se_build_files "202504.board.compat.map", tag .system_ext_private).
+;;
+;; The entries are the ones stock A17's 202504 mapping files hold for these two domains:
+;; system_ext mapping: vendor_qtelephony_202504, moto_camera_app_202504;
+;; product mapping: moto_app_202504 includes moto_camera_app (so the vendor's rules for Motorola
+;; apps, e.g. the image-tuner, panel and param-updater HAL clients, also apply to the camera, as
+;; on stock A17). moto_app itself is not ported.
+(typeattributeset vendor_qtelephony_202504 (vendor_qtelephony))
+(expandtypeattribute (vendor_qtelephony_202504) true)
+(typeattribute vendor_qtelephony_202504)
+(typeattributeset moto_camera_app_202504 (moto_camera_app))
+(expandtypeattribute (moto_camera_app_202504) true)
+(typeattribute moto_camera_app_202504)
+(typeattributeset moto_app_202504 (moto_camera_app))
+(expandtypeattribute (moto_app_202504) true)
+(typeattribute moto_app_202504)

@@ -1,0 +1,8 @@
+# Mirrors the stock entries (system_ext_seapp_contexts / product_seapp_contexts).
+user=_app seinfo=platform name=org.codeaurora.ims isPrivApp=true domain=vendor_qtelephony type=app_data_file levelFrom=all
+# Android 17: the IMS app runs in the process "com.qti.phone" (android:process in its manifest,
+# sharedUserId android.uid.qtiphone). An app process gets its domain by process name, so stock's
+# line for that name is needed too (stock A17 system_ext_seapp_contexts, same text).
+user=_app seinfo=platform name=com.qti.phone domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=common2 domain=moto_camera_app name=com.motorola.camera5 type=app_data_file levelFrom=user
+user=_app isPrivApp=true seinfo=common2 domain=moto_camera_app name=com.motorola.camera5:* type=app_data_file levelFrom=user

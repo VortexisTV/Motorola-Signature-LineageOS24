@@ -1,0 +1,71 @@
+{
+ "title": "microG",
+ "generated": "2026-11-11T17:07:58",
+ "context": {},
+ "counts": {
+  "FAIL": 0,
+  "WARNING": 0,
+  "UNKNOWN": 0,
+  "PASS": 6
+ },
+ "results": [
+  {
+   "id": "microg.apks",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "both microG APKs are in /product/priv-app and signed by the same key",
+   "details": [
+    "com.google.android.gms: differs from the pinned file; signer 9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165",
+    "com.android.vending: differs from the pinned file; signer 9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165"
+   ]
+  },
+  {
+   "id": "microg.signer",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "the APKs are signed with a certificate LineageOS accepts for microG",
+   "details": [
+    "source: frameworks/base/core/java/com/android/internal/content/MicrogUtils.java (REAL_SIGNATURE)"
+   ]
+  },
+  {
+   "id": "microg.debuggable",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "LineageOS's microG check is compiled in: MicrogUtils.isDebuggable() in the image's libandroid_runtime.so returns the constant true",
+   "details": [
+    "libandroid_runtime.so Build ID 57d8f12eb1dd9fab66ead9c01476de3c; _ZN7androidL12isDebuggableEP7_JNIEnvP7_jclass.__uniq.311997348663044173435474281781198079709: mov w0, #0x1; ret",
+    "ro.build.type=userdebug, ro.debuggable=0 (run-time property; 0 means no adb root, it does not affect microG)"
+   ]
+  },
+  {
+   "id": "microg.fake_signature",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "both manifests declare fake-signature metadata",
+   "details": [
+    "com.google.android.gms: True",
+    "com.android.vending: True"
+   ]
+  },
+  {
+   "id": "microg.privapp",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "allowlist equals the privileged permissions microG requests",
+   "details": [
+    "com.google.android.gms: 14 privileged requested, 14 allowlisted",
+    "com.android.vending: 3 privileged requested, 3 allowlisted"
+   ]
+  },
+  {
+   "id": "microg.sysconfig",
+   "area": "microg",
+   "status": "PASS",
+   "summary": "Doze/Data Saver/location exemptions installed",
+   "details": [
+    "/system/product/etc/sysconfig/sysconfig-vantage-microg.xml"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "status": "PASS",
+  "check": "patch.tree:packages/apps/QcRilAm",
+  "summary": "0001-per-slot-aidl-response-and-recovery.patch is applied in the source tree"
+ },
+ {
+  "status": "PASS",
+  "check": "patch.tree:system/core",
+  "summary": "0001-init-export-ro.carrier-from-the-boot-parameters.patch is applied in the source tree"
+ },
+ {
+  "status": "PASS",
+  "check": "patch.tree:vendor/apn",
+  "summary": "0001-allow-a-device-apn-database.patch is applied in the source tree"
+ },
+ {
+  "status": "PASS",
+  "check": "patch.image:packages/apps/QcRilAm",
+  "summary": "QcRilAm.apk contains \"setRequestInterface has not returned after 10 s\""
+ },
+ {
+  "status": "PASS",
+  "check": "patch.image:system/core",
+  "summary": "/system/bin/init contains \"ro.boot.carrier\""
+ },
+ {
+  "status": "PASS",
+  "check": "patch.image:vendor/apn",
+  "summary": "/product/etc/apns-conf.xml is the pinned stock file (ce09e19bdc4e...): LineageOS's generated APN list is not installed in its place"
+ },
+ {
+  "status": "PASS",
+  "check": "upstream.frameworks/native",
+  "summary": "(A16 patch dropped, fix is upstream) surfaceflinger in the image (Build ID 941cd7e778ed1f185c3bc6504f171600): ScreenCaptureOutput::generateClientCompositionRequests has 59 calls, none to dup(); the LUT descriptor is moved, not copied into a temporary"
+ }
+]

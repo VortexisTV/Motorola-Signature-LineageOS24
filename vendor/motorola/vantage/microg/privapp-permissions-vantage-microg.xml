@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Privileged permissions of microG, derived (2026-11-11) from the two release APKs
+     (aapt dump permissions) and the protection levels in LineageOS 24.0
+     frameworks/base core/res/AndroidManifest.xml: every requested permission whose level
+     contains "privileged", nothing else. android.permission.FAKE_PACKAGE_SIGNATURE is requested
+     by both APKs but does not exist in LineageOS 24.0 (its microG check reads the apps'
+     fake-signature metadata instead), so it has no entry. validate-microg.py re-derives this
+     list from the built image. -->
+<permissions>
+    <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.INSTALL_LOCATION_PROVIDER"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.NETWORK_SCAN"/>
+        <permission name="android.permission.PROVIDE_DEFAULT_ENABLED_CREDENTIAL_SERVICE"/>
+        <permission name="android.permission.PROVIDE_REMOTE_CREDENTIALS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+        <permission name="android.permission.WATCH_APPOPS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.android.vending">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+</permissions>

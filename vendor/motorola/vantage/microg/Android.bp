@@ -1,0 +1,55 @@
+// microG: open-source implementation of Google Play services (owner's request, 2026-11-11).
+// See README.md. The APKs are microG's official release builds, fetched and checked against
+// pinned SHA-256 values by scripts/fetch-microg.sh; they are never committed.
+
+android_app_import {
+    name: "GmsCore",
+    apk: "prebuilt/GmsCore.apk",
+    presigned: true,
+    privileged: true,
+    product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    // Exactly the <uses-library> entries of the APK's manifest (aapt dump badging).
+    uses_libs: ["com.android.location.provider"],
+    optional_uses_libs: [
+        "org.apache.http.legacy",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    required: [
+        "privapp-permissions-vantage-microg.xml",
+        "sysconfig-vantage-microg.xml",
+    ],
+}
+
+android_app_import {
+    name: "MicrogCompanion",
+    apk: "prebuilt/Companion.apk",
+    presigned: true,
+    privileged: true,
+    product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    required: ["privapp-permissions-vantage-microg.xml"],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-vantage-microg.xml",
+    src: "privapp-permissions-vantage-microg.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "sysconfig-vantage-microg.xml",
+    src: "sysconfig-vantage-microg.xml",
+    sub_dir: "sysconfig",
+    product_specific: true,
+}

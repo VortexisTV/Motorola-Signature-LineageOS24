@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SystemUI values of stock A171WVH.21-16-16 that describe this phone's screen
+     (com.android.systemui.auto_generated_rro_product__ in the stock /product). Values copied
+     unchanged; PORTING_A17.md has the review. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.systemui.overlay.vantage">
+    <application android:hasCode="false" />
+    <overlay
+        android:targetPackage="com.android.systemui"
+        android:isStatic="true"
+        android:priority="100" />
+</manifest>

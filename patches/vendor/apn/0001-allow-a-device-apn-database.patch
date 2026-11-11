@@ -1,0 +1,28 @@
+vendor/apn: let a product supply its own APN database
+
+LineageOS installs its generated APN list to /product/etc/apns-conf.xml. The vantage image
+ships the stock Android 17 list instead (it has the carrier initial-attach and tethering
+APNs that the LineageOS list lacks for Optimum 313390, and it is what the Android 16 port
+was verified with). Soong writes install rules for every enabled module, so the stock copy
+and this module clash in Kati unless this one is disabled; the product sets
+lineage_apn.use_device_apns (vantage.mk) and provides apns-conf.xml in its namespace.
+
+diff --git a/Android.bp b/Android.bp
+index 5b2cb8d..814a1fd 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -32,6 +32,14 @@ prebuilt_etc_xml {
+     product_specific: true,
+     src: ":apns-conf",
+     schema: ":apns-conf-schema",
++    // A product that ships its own APN database (for example the one of the stock firmware it
++    // runs on) sets the Soong config variable lineage_apn.use_device_apns and provides a module
++    // named apns-conf.xml in its own namespace. Soong writes install rules for every enabled
++    // module, so this one has to be disabled for the two not to clash.
++    enabled: select(soong_config_variable("lineage_apn", "use_device_apns"), {
++        true: false,
++        default: true,
++    }),
+ }
+ 
+ filegroup {

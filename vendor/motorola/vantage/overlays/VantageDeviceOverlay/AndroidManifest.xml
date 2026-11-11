@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Framework values that describe this phone's hardware and that stock keeps in /product
+     overlays (android.auto_generated_rro_product__, com.motorola.android.overlay.common of
+     A171WVH.21-16-16). A generic system image does not mount the stock /product. The stock
+     /vendor overlays (brightness curves, Night Light, refresh rates, colour modes) stay active;
+     where stock's /product overrides one of their values (rounded_corner_radius), the /product
+     value is the effective one and is repeated here. Values copied unchanged; PORTING_A17.md
+     has the review. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.overlay.vantage.device">
+    <application android:hasCode="false" />
+    <overlay
+        android:targetPackage="android"
+        android:isStatic="true"
+        android:priority="100" />
+</manifest>

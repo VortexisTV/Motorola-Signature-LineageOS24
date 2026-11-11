@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- microG's push channel (Cloud Messaging) keeps one connection open for every app that uses
+     it, so it must keep network access in Doze and Data Saver; as the network location
+     provider it must not be throttled in the background. Same exemptions Google Play services
+     gets on stock. -->
+<config>
+    <allow-in-power-save package="com.google.android.gms" />
+    <allow-in-data-usage-save package="com.google.android.gms" />
+    <allow-unthrottled-location package="com.google.android.gms" />
+</config>

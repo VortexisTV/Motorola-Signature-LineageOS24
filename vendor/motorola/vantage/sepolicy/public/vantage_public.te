@@ -1,0 +1,25 @@
+# Public (versioned) system-side types that the stock vantage vendor policy expects.
+#
+# The stock vendor_sepolicy.cil (policy version 202504) contains rules written against
+# vendor_qtelephony_202504 and moto_camera_app_202504, and against the attributes below.
+# On stock these symbols are declared by Motorola's system_ext/product policy. Declaring
+# them here lets the unmodified vendor rules bind to our domains; on Android 17 the 202504
+# mapping entries come from private/compat/202504/202504.cil. Evidence:
+# reports/sepolicy-slice*.json.
+
+# Qualcomm telephony apps (org.codeaurora.ims on stock: system_ext_seapp_contexts).
+type vendor_qtelephony, domain;
+
+# Motorola Camera (com.motorola.camera5 on stock: product_seapp_contexts).
+type moto_camera_app, domain;
+
+# Attributes shared between system-side and vendor policy on stock. The two HAL attributes
+# themselves are needed by hal_client_domain() (Android 17 adds memfd_file rules between a
+# HAL's clients and the HAL); stock declares them in Qualcomm's system_ext public policy and the
+# vendor's plat_pub_versioned.cil.
+attribute vendor_hal_atfwd;
+attribute vendor_hal_atfwd_client;
+attribute vendor_hal_imsvthal;
+attribute vendor_hal_imsvthal_client;
+attribute motoappdomain;
+attribute moto_qcxdsp_domain;

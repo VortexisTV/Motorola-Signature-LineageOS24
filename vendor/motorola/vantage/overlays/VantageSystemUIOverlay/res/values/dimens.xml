@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Distance of the status bar content (clock on the left, icons on the right) from the
+         screen's rounded corners. AOSP's default is 0, which puts the clock almost into the left
+         corner; the right side keeps the privacy-dot padding (20dp) either way. -->
+    <dimen name="rounded_corner_content_padding">30px</dimen>
+</resources>

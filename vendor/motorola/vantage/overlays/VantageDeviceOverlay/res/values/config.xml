@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Front camera punch hole: the cutout the status bar must avoid. -->
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -50,0 L 50,0 L 50,130 L -50,130 Z</string>
+    <dimen name="status_bar_height_portrait">130px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+
+    <!-- Display corner radius. The stock /vendor overlay says 24dp, but stock's /product overlay
+         (which takes precedence there) says 100px; this is the effective stock value. -->
+    <dimen name="rounded_corner_radius">100px</dimen>
+
+    <!-- Under-display fingerprint sensor: centre x, centre y, radius in pixels. -->
+    <integer-array name="config_udfps_sensor_props">
+        <item>611</item>
+        <item>2066</item>
+        <item>91</item>
+    </integer-array>
+
+    <!-- Always-on display / ambient display as on stock (off by default, user setting). -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <integer name="config_screenBrightnessDoze">17</integer>
+
+    <!-- Power: as on stock for this display and kernel. -->
+    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
+    <!-- Mobile data: MTU and TCP buffer sizes per radio technology. -->
+    <integer name="config_mobile_mtu">1410</integer>
+    <string-array name="config_network_type_tcp_buffers" translatable="false">
+        <item>NR_SA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608</item>
+        <item>NR_SA:2097152,6291456,16777216,512000,2097152,8388608</item>
+        <item>NR_NSA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608</item>
+        <item>NR_NSA:2097152,6291456,16777216,512000,2097152,8388608</item>
+        <item>LTE:2097152,4194304,8388608,262144,524288,4194304</item>
+        <item>LTE_CA:2097152,4194304,16777216,524288,1048576,8388608</item>
+        <item>UMTS:131072,262144,1452032,4096,16384,1220608</item>
+        <item>HSPA:131072,262144,1452032,4096,16384,1220608</item>
+        <item>HSUPA:131072,262144,1452032,4096,16384,1220608</item>
+        <item>HSDPA:131072,262144,1452032,4096,16384,1220608</item>
+        <item>HSPA+:131072,262144,1452032,4096,16384,1220608</item>
+        <item>EDGE:16384,32768,131072,4096,16384,65536</item>
+        <item>GPRS:4096,8192,24576,4096,8192,24576</item>
+        <item>EvDo_0:131072,262144,1048576,4096,16384,524288</item>
+        <item>EvDo_A:131072,262144,1048576,4096,16384,524288</item>
+        <item>EvDo_B:131072,262144,1048576,4096,16384,524288</item>
+        <item>eHRPD:131072,262144,1048576,4096,16384,524288</item>
+        <item>CDMA:4094,87380,262144,4096,16384,262144</item>
+        <item>1xRTT:16384,32768,131072,4096,16384,102400</item>
+        <item>iDEN:4094,87380,262144,4096,16384,262144</item>
+        <item>TD_SCDMA:58254,349525,1048576,58254,349525,1048576</item>
+    </string-array>
+</resources>

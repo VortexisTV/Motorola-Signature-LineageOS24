@@ -1,0 +1,403 @@
+ONLY-SYS	product	com.google.android.overlay.modules.captiveportallogin.forframework	string/config_defaultCaptivePortalLoginPackageName	() "com.google.android.captiveportallogin"
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	bool/config_fillMainBuiltInDisplayCutout	() true
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	dimen/status_bar_height_portrait	() 48.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	string/config_mainBuiltInDisplayCutout	() "M 0,0 L -48, 0 C -48,48 -48,48 0,48 Z @dp @right"
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	string/config_mainBuiltInDisplayCutoutRectApproximation	() @0x010402ef
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.corner	string/display_cutout_emulation_overlay	() "Corner cutout" (ca) "Retall de l'extrem" (da) "Hjørneudklip" (fa) "بریدگی گوشه" (ja) "
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	bool/config_fillMainBuiltInDisplayCutout	() true
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	dimen/status_bar_height_portrait	() 48.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	string/config_mainBuiltInDisplayCutout	() "M 0,0 L -72, 0 L -69.9940446283, 20.0595537175 C -69.1582133885, 28.4178661152 -65.2, 
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	string/config_mainBuiltInDisplayCutoutRectApproximation	() @0x010402ef
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.double	string/display_cutout_emulation_overlay	() "Double cutout" (ca) "Retall doble" (da) "Dobbelt udklip" (fa) "بریدگی دوتایی" (ja) "ダブ
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	bool/config_fillMainBuiltInDisplayCutout	() true
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	dimen/status_bar_height_portrait	() 136.000000px
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	string/config_mainBuiltInDisplayCutout	() "M 128,83 A 44,44 0 0 1 84,127 44,44 0 0 1 40,83 44,44 0 0 1 84,39 44,44 0 0 1 128,83 Z
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	string/config_mainBuiltInDisplayCutoutRectApproximation	() "M 0.0,0.0 h 136 v 136 h -136 Z @left"
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.hole	string/display_cutout_emulation_overlay	() "Punch Hole cutout" (ca) "Retall de perforadora" (da) "Udskåret hul" (fa) "‏برش Punch H
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	bool/config_fillMainBuiltInDisplayCutout	() false
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	bool/config_maskMainBuiltInDisplayCutout	() true
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/quick_qs_offset_height	() 48.000000dp (land) 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/quick_qs_total_height	() 176.000000dp (land) 156.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/rounded_corner_radius_top	() 70.000000px
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/status_bar_height_portrait	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	dimen/status_bar_padding_top_portrait	() 0.000000px
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.noCutout	string/display_cutout_emulation_overlay	() "Hide" (ca) "Amaga" (da) "Skjul" (fa) "پنهان کردن" (ja) "非表示" (ka) "დამალვა" (pa) "ਲੁਕਾ
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	bool/config_fillMainBuiltInDisplayCutout	() true
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	dimen/status_bar_height_portrait	() 48.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	string/config_mainBuiltInDisplayCutout	() "M 0,0 L -48, 0 L -44.3940446283, 36.0595537175 C -43.5582133885, 44.4178661152 -39.6, 
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	string/config_mainBuiltInDisplayCutoutRectApproximation	() @0x010402ef
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.tall	string/display_cutout_emulation_overlay	() "Tall cutout" (ca) "Retall alt" (da) "Højt udklip" (fa) "بریدگی بلند" (ja) "縦長のカットアウト" 
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/status_bar_height_landscape	() 48.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/status_bar_height_portrait	() 28.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/status_bar_padding_top_portrait	() 0.000000px
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/waterfall_display_bottom_edge_size	() 0.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/waterfall_display_left_edge_size	() 20.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/waterfall_display_right_edge_size	() 20.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	dimen/waterfall_display_top_edge_size	() 0.000000dp
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	string/config_mainBuiltInDisplayCutout	() ""
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	string/config_mainBuiltInDisplayCutoutRectApproximation	() ""
+ONLY-SYS	product	com.android.internal.display.cutout.emulation.waterfall	string/display_cutout_emulation_overlay	() "Waterfall cutout" (ca) "Retall de cascada" (da) "Vandfaldshak" (fa) "لبه آبشاری" (ja) 
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/app_name	() "FontExo2Regular"
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/config_bodyFontFamily	() "Exo2-Regular"
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/config_bodyFontFamilyMedium	() "Exo2-Regular"
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/config_headlineFontFamily	() "Exo2-Regular"
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/config_headlineFontFamilyMedium	() "Exo2-Regular"
+ONLY-SYS	product	com.android.theme.font.Exo2Regular	string/config_timeFontFamily	() "Exo2-Stacked"
+ONLY-SYS	product	com.android.theme.font.notoserifsource	string/config_bodyFontFamily	() "source-sans-pro"
+ONLY-SYS	product	com.android.theme.font.notoserifsource	string/config_bodyFontFamilyMedium	() "source-sans-pro-semi-bold"
+ONLY-SYS	product	com.android.theme.font.notoserifsource	string/config_headlineFontFamily	() "serif"
+ONLY-SYS	product	com.android.theme.font.notoserifsource	string/config_headlineFontFamilyMedium	() "serif-bold"
+ONLY-SYS	product	com.android.theme.font.notoserifsource	string/font_notoserif_source_overlay	() "Noto Serif / Source Sans Pro"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/app_name	() "RobotoSlabRegular"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/config_bodyFontFamily	() "RobotoSlab-Regular"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/config_bodyFontFamilyMedium	() "RobotoSlab-Regular"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/config_headlineFontFamily	() "RobotoSlab-Regular"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/config_headlineFontFamilyMedium	() "RobotoSlab-Regular"
+ONLY-SYS	product	com.android.theme.font.RobotoSlabRegular	string/config_timeFontFamily	() "RobotoSlab-Stacked"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/app_name	() "RookeryRegular"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/config_bodyFontFamily	() "Rookery-Regular"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/config_bodyFontFamilyMedium	() "Rookery-Regular"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/config_headlineFontFamily	() "Rookery-Regular"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/config_headlineFontFamilyMedium	() "Rookery-Regular"
+ONLY-SYS	product	com.android.theme.font.RookeryRegular	string/config_timeFontFamily	() "Rookery-Stacked"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/app_name	() "Neo"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/config_bodyFontFamily	() "SpaceGrotesk"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/config_bodyFontFamilyMedium	() "SpaceGrotesk"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/config_headlineFontFamily	() "SpaceGrotesk"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/config_headlineFontFamilyMedium	() "SpaceGrotesk"
+ONLY-SYS	product	com.android.theme.font.SpaceGrotesk	string/config_timeFontFamily	() "SpaceGrotesk-Stacked"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/app_name	() "Grotesk"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/config_bodyFontFamily	() "WorkSans"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/config_bodyFontFamilyMedium	() "WorkSans"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/config_headlineFontFamily	() "WorkSans"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/config_headlineFontFamilyMedium	() "WorkSans"
+ONLY-SYS	product	com.android.theme.font.WorkSans	string/config_timeFontFamily	() "WorkSans-Stacked"
+ONLY-SYS	product	com.google.android.verifier.overlay	string/config_developerVerificationPolicyDelegatePackageName	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.verifier.overlay	string/config_developerVerificationServiceProviderPackageName	() "com.google.android.verifier"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.aicore	string/config_defaultOnDeviceIntelligenceDeviceConfigNamespace	() "aicore"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.aicore	string/config_defaultOnDeviceIntelligenceService	() "com.google.android.aicore/com.google.android.apps.aicore.service.isolated.AiCoreIntell
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.aicore	string/config_defaultOnDeviceSandboxedInferenceService	() "com.google.android.aicore/com.google.android.apps.aicore.service.isolated.AiCoreIsolat
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	bool/config_adaptive_sleep_available	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultAppPredictionService	() "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultAttentionService	() "com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAtten
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultAugmentedAutofillService	() "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillSe
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultContentCaptureService	() "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureServi
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultContentSuggestionsService	() "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsS
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultOnDeviceSpeechRecognitionService	() "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionSe
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultSystemCaptionsManagerService	() "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsMana
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_defaultTextClassifierPackage	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_systemAudioIntelligence	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_systemNotificationIntelligence	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_systemTextIntelligence	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_systemUiIntelligence	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi	string/config_systemVisualIntelligence	() "com.google.android.as"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.asi.assistant.access	string/config_defaultAssistantAccessComponent	() "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_accessibility_allowed_install_source	() (array) size=1 ["com.android.vending"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_disabledUntilUsedPreinstalledImes	() (array) size=1 ["com.google.android.inputmethod.latin"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_enabledCredentialProviderService	() (array) size=1 ["com.google.android.gms/.auth.api.credentials.credman.service.PasswordA
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_ephemeralResolverPackage	() (array) size=1 ["com.google.android.gms"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_fontManagerServiceCerts	() (array) size=1 ["/product/etc/security/fsverity/gms_fsverity_cert.der"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_forceQueryablePackages	() (array) size=3 ["com.android.settings", "com.google.android.gms", "com.android.vending"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_healthConnectMigrationKnownSigners	() (array) size=1 ["B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_healthConnectRestoreKnownSigners	() (array) size=1 ["56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_integrityRuleProviderPackages	() (array) size=2 ["com.android.vending", "com.google.android.gms"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_locationExtraPackageNames	() (array) size=1 ["com.google.android.gms.location.history"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_locationProviderPackageNames	() (array) size=2 ["com.google.android.gms", "com.android.location.fused"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_packagesExemptFromSuspension	() (array) size=1 ["com.google.android.apps.wellbeing"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_primaryCredentialProviderService	() (array) size=1 ["com.google.android.gms/.auth.api.credentials.credman.service.PasswordA
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_priorityOnlyDndExemptPackages	() (array) size=4 ["com.google.android.dialer", "com.android.server.telecom", "android", "
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_rawContactsEligibleDefaultAccountTypes	() (array) size=1 ["com.google"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/config_setContactsDefaultAccountKnownSigners	() (array) size=1 ["F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_cross_profile_apps	() (array) size=3 ["com.google.android.googlequicksearchbox", "com.google.android.inputmet
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_disallowed_apps_managed_device	() (array) size=1 ["com.google.android.apps.healthdata"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_disallowed_apps_managed_profile	() (array) size=1 ["com.google.android.apps.healthdata"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_disallowed_apps_managed_user	() (array) size=1 ["com.google.android.apps.healthdata"]
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_required_apps_managed_device	() (array) size=18 ["com.android.vending", "com.google.android.gms", "com.google.android.c
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_required_apps_managed_profile	() (array) size=12 ["com.android.vending", "com.google.android.gms", "com.google.android.c
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_required_apps_managed_user	() (array) size=12 ["com.android.vending", "com.google.android.gms", "com.google.android.c
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	array/vendor_required_attestation_certificates	() (array) size=4 ["-----BEGIN CERTIFICATE----- MIIFYDCCA0igAwIBAgIJAOj6GWMU0voYMA0GCSqGSI
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_buttonTextAllCaps	() false
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableAutoPowerModes	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableFusedLocationOverlay	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableGeocoderOverlay	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableGeofenceOverlay	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableNetworkLocationOverlay	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_enableQrCodeScannerOnLockScreen	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_hotspotNetworksEnabledForService	() false
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_knownNetworksEnabledForService	() false
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_settingsHelpLinksEnabled	() false
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	bool/config_stopSystemPackagesByDefault	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	integer/config_userTypePackageWhitelistMode	() 5
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_allowlistProviderServicePackage	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_appsAuthorizedForSharedAccounts	() ";com.android.vending;com.android.settings;"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultAccessibilityService	() "com.google.android.marvin.talkback/.TalkBackService"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultAutofillService	() "com.google.android.gms/.autofill.service.AutofillService"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultCredentialManagerAutofillService	() "com.android.credentialmanager/com.android.credentialmanager.autofill.CredentialAutofil
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultCredentialManagerHybridService	() "com.google.android.gms/.auth.api.credentials.credman.service.RemoteService"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultDndAccessPackages	() "com.google.android.gms:com.google.android.apps.wellbeing"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultListenerAccessPackages	() "com.motorola.launcher3:com.motorola.launcher.secondarydisplay:com.android.launcher3:co
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultMusic	() "com.google.android.apps.youtube.music"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultNearbyFastPairSettingsDevicesComponent	() "com.google.android.gms/com.google.android.gms.nearby.discovery.devices.SavedDevicesSet
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultNearbySharingComponent	() "com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultNetworkRecommendationProviderPackage	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultQrCodeComponent	() "com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_defaultSupervisionProfileOwnerComponent	() "com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_deviceConfiguratorPackageName	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_devicePolicyManagement	() "com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_devicePolicyManagementUpdater	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_healthConnectMigratorPackageName	() "com.google.android.apps.healthdata" (en-rXA) "[çöḿ.ĝööĝļé.åñðŕöîð.åþþš.ĥéåļţĥðåţå one 
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_help_url_action_disabled_by_advanced_protection	() "intent:#Intent;action=com.google.android.gms.settings.ADVANCED_PROTECTION;package=com.
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_intrusionDetectionEventTransport	() "com.google.android.gms/.intrusiondetection.service.IntrusionDetectionEventTransportSer
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_oemCredentialManagerDialogComponent	() "com.google.android.gms/.identitycredentials.ui.CredentialChooserActivity"
+also-vendor	product	com.google.android.overlay.gmsconfig.common	string/config_persistentDataPackageName	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemActivityRecognizer	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemAutomotiveProjection	() "com.google.android.projection.gearhead"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemCallStreaming	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemCompanionDeviceProvider	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemGameService	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemSettingsIntelligence	() "com.android.settings.intelligence"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemSpeechRecognizer	() "com.google.android.tts"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemSupervision	() "com.google.android.gms.supervision"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/config_systemWellbeing	() "com.google.android.apps.wellbeing"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/harmful_app_warning_title	() "Play Protect warning" (ca) "Avís de Play Protect" (da) "Play Protect-advarsel" (fa) "پ
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/vendor_required_attestation_revocation_list_url	() "https://android.googleapis.com/attestation/status"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/widget_default_class_name	() ""
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	string/widget_default_package_name	() ""
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.common	xml/config_webview_packages	() (file) res/xml/config_webview_packages.xml type=XML
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.comms	string/config_defaultDialer	() "com.google.android.dialer"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.comms	string/config_defaultSms	() "com.google.android.apps.messaging"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.comms	string/config_systemContacts	() "com.google.android.contacts"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.contextualsearch	bool/config_searchAllEntrypointsEnabledDefault	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.contextualsearch	bool/config_useFastHdrExitTransitions	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.contextualsearch	string/config_defaultContextualSearchPackageName	() "com.google.android.googlequicksearchbox"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.gsa	bool/config_allowDisablingAssistDisclosure	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.gsa	string/config_defaultAssistant	() "com.google.android.googlequicksearchbox"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.geotz	bool/config_enableGeolocationTimeZoneDetection	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.geotz	bool/config_enablePrimaryLocationTimeZoneProvider	() true
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.geotz	bool/config_enableSecondaryLocationTimeZoneProvider	() false
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.geotz	string/config_primaryLocationTimeZoneProviderPackageName	() "com.google.android.gms"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.geotz	string/config_secondaryLocationTimeZoneProviderPackageName	() ""
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.personalsafety	string/config_emergency_dialer_package	() "com.google.android.apps.safetyhub"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.photos	string/config_systemGallery	() "com.google.android.apps.photos"
+ONLY-SYS	product	com.google.android.overlay.gmsconfig.searchselector	string/config_defaultSearchSelectorPackageName	() "com.google.android.apps.setupwizard.searchselector"
+ONLY-SYS	product	com.google.android.overlay.modules.ext.services	string/config_defaultAssistantAccessComponent	() "com.google.android.ext.services/android.ext.services.notification.Assistant"
+ONLY-SYS	product	com.google.android.overlay.modules.ext.services	string/config_servicesExtensionPackage	() "com.google.android.ext.services"
+ONLY-SYS	product	com.google.android.overlay.modules.healthfitness.forframework	array/config_backupHealthConnectDataAndSettingsKnownSigners	() (array) size=3 ["4F59009D33D5B8C60E4B14623A771EBA08E5C02D2F0A124DE8D184AA9DAF00B4", "5F
+ONLY-SYS	product	com.google.android.overlay.modules.healthfitness.forframework	array/config_healthConnectMigrationKnownSigners	() (array) size=1 ["B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003"]
+ONLY-SYS	product	com.google.android.overlay.modules.healthfitness.forframework	array/config_healthConnectRestoreKnownSigners	() (array) size=1 ["56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87"]
+ONLY-SYS	product	com.google.android.overlay.modules.healthfitness.forframework	array/config_restoreHealthConnectDataAndSettingsKnownSigners	() (array) size=3 ["4F59009D33D5B8C60E4B14623A771EBA08E5C02D2F0A124DE8D184AA9DAF00B4", "5F
+ONLY-SYS	product	com.google.android.overlay.modules.healthfitness.forframework	string/config_healthConnectMigratorPackageName	() "com.google.android.apps.healthdata" (en-rXA) "[çöḿ.ĝööĝļé.åñðŕöîð.åþþš.ĥéåļţĥðåţå one 
+ONLY-SYS	product	com.google.android.overlay.modules.permissioncontroller.forframework	string/config_incidentReportApproverPackage	() "com.google.android.permissioncontroller"
+ONLY-SYS	product	com.android.theme.icon.pebble	bool/config_useRoundIcon	() false
+ONLY-SYS	product	com.android.theme.icon.pebble	string/config_icon_mask	() "M55,0 C25,0 0,25 0,50 0,78 28,100 55,100 85,100 100,85 100,58 100,30 86,0 55,0 Z"
+ONLY-SYS	product	com.android.theme.icon.pebble	string/icon_shape_pebble_overlay	() "Pebble"
+ONLY-SYS	product	com.motorola.android.overlay.vantage.violetindigo	string/config_icon_mask	() "M45.8125 1.2793C48.4231 0.273155 51.306 0.241423 53.9336 1.18457L54.4561 1.38672L81.21
+ONLY-SYS	product	com.android.theme.icon.round	bool/config_useRoundIcon	() true
+ONLY-SYS	product	com.android.theme.icon.round	string/config_icon_mask	() "M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4
+ONLY-SYS	product	com.android.theme.icon.round	string/icon_shape_round_overlay	() "Round"
+ONLY-SYS	product	com.android.theme.icon.roundedrect	bool/config_useRoundIcon	() false
+ONLY-SYS	product	com.android.theme.icon.roundedrect	string/config_icon_mask	() "M50,0L88,0 C94.4,0 100,5.4 100 12 L100,88 C100,94.6 94.6 100 88 100 L12,100 C5.4,100 0
+ONLY-SYS	product	com.android.theme.icon.roundedrect	string/icon_shape_roundedrect_overlay	() "Rounded Rectangle" (ca) "Rectangle amb vores rodones" (da) "Afrundet rektangel" (fa) "
+ONLY-SYS	product	com.android.theme.icon.teardrop	bool/config_useRoundIcon	() false
+ONLY-SYS	product	com.android.theme.icon.teardrop	string/config_icon_mask	() "M50,0 C77.6,0 100,22.4 100,50 L100,88 C100,94.6 94.6,100 88,100 L50,100 C22.4 100 0 77
+ONLY-SYS	product	com.android.theme.icon.teardrop	string/icon_shape_teardrop_overlay	() "Teardrop" (ca) "Llàgrima" (da) "Dråbe" (fa) "قطره اشک" (ja) "ティアドロップ" (ta) "கண்ணீர்த்த
+ONLY-SYS	product	com.google.android.overlay.modules.modulemetadata.forframework	string/config_defaultModuleMetadataProvider	() "com.google.android.modulemetadata"
+ONLY-SYS	product	com.motorola.android.overlay.appclone	array/cloneable_apps	() (array) size=8 ["com.facebook.orca", "com.skype.raider", "com.tencent.mm", "org.telegra
+ONLY-SYS	product	com.motorola.android.overlay.appclone	bool/zz_moto_app_clone_enabled	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	array/config_concurrent_hotword_assistants	() (array) size=2 ["com.lenovo.qira:ab92681535f44b602a9e7a383a55b1d678225b19dc1039eb3dc4b9
+ONLY-SYS	product	com.motorola.android.overlay.common	array/config_globalActionsList	() (array) size=7 ["emergency", "lockdown", "power", "restart", "logout", "screenshot", "b
+ONLY-SYS	product	com.motorola.android.overlay.common	array/config_network_type_tcp_buffers	() (array) size=21 ["NR_SA_MMWAVE:2097152,6291456,16777216,512000,2097152,8388608", "NR_SA
+ONLY-SYS	product	com.motorola.android.overlay.common	array/no_ems_support_sim_operators	() (array) size=6 ["20404;suffix;BAE0000000000000", "316010;prefix", "31122;prefix", "3115
+ONLY-SYS	product	com.motorola.android.overlay.common	array/supported_locales	() (array) size=441 ["af-NA", "af-ZA", "am-ET", "ar-AE", "ar-AE-u-nu-arab", "ar-BH", "ar-B
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_LTE_eri_for_network_name	() false
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_adaptive_sleep_available	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_auto_attach_data_on_creation	() false
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_buttonTextAllCaps	() false
+also-vendor	product	com.motorola.android.overlay.common	bool/config_cellBroadcastAppLinks	() true
+also-vendor	product	com.motorola.android.overlay.common	bool/config_enableMultiUserUI	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_enable_navbar_customization	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_performantAuthDefault	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_setColorTransformAccelerated	() true
+also-vendor	product	com.motorola.android.overlay.common	bool/config_showNavigationBar	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_supportsMicToggle	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_suspendWhenScreenOffDueToProximity	() true
+also-vendor	product	com.motorola.android.overlay.common	bool/config_switch_phone_on_voice_reg_state_change	() false
+ONLY-SYS	product	com.motorola.android.overlay.common	bool/config_update_operator_name_after_carrier_config_loaded	() true
+ONLY-SYS	product	com.motorola.android.overlay.common	integer/config_autoPowerModeAnyMotionSensor	() 30
+ONLY-SYS	product	com.motorola.android.overlay.common	integer/config_keyChordPowerVolumeUp	() 1
+ONLY-SYS	product	com.motorola.android.overlay.common	integer/config_longPressOnPowerBehavior	() 1
+ONLY-SYS	product	com.motorola.android.overlay.common	integer/config_mobile_mtu	() 1410
+also-vendor	product	com.motorola.android.overlay.common	integer/config_multiuserMaximumUsers	() 4
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_defaultDndAccessPackages	() "com.google.android.gms:com.google.android.apps.wellbeing:com.motorola.camera2:com.moto
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_defaultListenerAccessPackages	() "com.motorola.motodisplay:com.motorola.motolights:com.motorola.launcher3:com.motorola.l
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_dreamsDefaultComponent	() "com.android.dreams.basic/com.android.dreams.basic.Colors"
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_sharedConnectivityServiceIntentAction	() "com.google.android.gms.magictether.BIND"
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_sharedConnectivityServicePackage	() "com.google.android.gms"
+ONLY-SYS	product	com.motorola.android.overlay.common	string/config_wallpaperCropperPackage	() "com.google.android.apps.wallpaper"
+ONLY-SYS	product	com.motorola.android.overlay.common	string/satellite_notification_summary	(mcc730-mnc1) "You can send and receive messages without a mobile or Wi-Fi network" (mcc73
+ONLY-SYS	product	com.motorola.android.overlay.common	string/satellite_notification_title	(mcc730-mnc1) "Auto connected to satellite" (mcc730-mnc1-en-rXA) "[Åûţö çöññéçţéð ţö šåţéļ
+ONLY-SYS	product	com.motorola.android.overlay.crystaltalkai	bool/config_enable_crystal_talk_ai_settings	() true
+also-vendor	product	com.motorola.android.overlay.dualsim	integer/config_num_physical_slots	() 2
+ONLY-SYS	product	com.motorola.android.overlay.lpptoga	bool/config_volumeHushGestureEnabled	() false
+ONLY-SYS	product	com.motorola.android.overlay.lpptoga	integer/config_keyChordPowerVolumeUp	() 2
+ONLY-SYS	product	com.motorola.android.overlay.lpptoga	integer/config_longPressOnPowerBehavior	() 5
+ONLY-SYS	product	com.motorola.android.overlay.midram	bool/config_moto_global_freeform_enabled	() false
+also-vendor	product	com.motorola.android.overlay.midram.upcoming	bool/config_enableMultiUserUI	() false
+also-vendor	product	com.motorola.android.overlay.midram.upcoming	bool/config_enableWifiDisplay	() false
+also-vendor	product	com.motorola.android.overlay.midram.upcoming	integer/config_multiuserMaximumUsers	() 1
+ONLY-SYS	product	com.motorola.android.overlay.payjoy	array/config_payjoy_channellist	() (array) size=9 ["altmx", "amxmx", "attmx", "avaco", "openla", "openmx", "openpe", "retl
+ONLY-SYS	product	com.motorola.android.overlay.qcom.common	bool/config_enhanced_iwlan_handover_check	() false
+ONLY-SYS	product	com.motorola.android.overlay.qcom.common	string/config_qualified_networks_service_package	() "vendor.qti.iwlan"
+ONLY-SYS	product	com.motorola.android.overlay.qcom.common	string/config_wlan_data_service_package	() "vendor.qti.iwlan"
+ONLY-SYS	product	com.motorola.android.overlay.qcom.common	string/config_wlan_network_service_package	() "vendor.qti.iwlan"
+ONLY-SYS	product	com.android.internal.systemui.navbar.threebutton	bool/config_allowSeamlessRotationDespiteNavBarMoving	() false (sw600dp) true
+ONLY-SYS	product	com.android.internal.systemui.navbar.threebutton	dimen/navigation_bar_gesture_height	(land) @0x01050294
+ONLY-SYS	product	com.android.internal.systemui.navbar.threebutton	integer/config_navBarInteractionMode	() 0
+ONLY-SYS	product	com.android.internal.systemui.navbar.threebutton	string/navigation_bar_mode_title	() "3 Button Navigation Bar"
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_allowSeamlessRotationDespiteNavBarMoving	() true
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_attachNavBarToAppDuringTransition	() true (sw600dp) false
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_imeDrawsImeNavBar	() true
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_navBarAlwaysShowOnSideEdgeGesture	() true
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_navBarCanMove	() false
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_navBarNeedsScrim	() false
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	bool/config_navBarTapThrough	() true
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_frame_height	() 24.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_frame_height_landscape	() @dimen/cli_navigation_bar_frame_height
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_gesture_height	() @dimen/cli_navigation_bar_frame_height
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_height	() 20.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_height_landscape	() 20.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/cli_navigation_bar_width	() 20.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/config_backGestureInset	() 38.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/navigation_bar_frame_height	() 48.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/navigation_bar_gesture_height	() 32.000000dp (land) 32.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/navigation_bar_height	() 24.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/navigation_bar_height_landscape	() 24.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	dimen/navigation_bar_width	() 24.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	integer/config_navBarInteractionMode	() 2
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	integer/config_navBarOpacityMode	() 2
+ONLY-SYS	product	com.android.internal.systemui.navbar.gestural	string/navigation_bar_mode_title	() "Gestural Navigation Bar"
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_frame_height	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_frame_height_landscape	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_gesture_height	() 24.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_height	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_height_landscape	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/cli_navigation_bar_width	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/navigation_bar_frame_height	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/navigation_bar_gesture_height	() 32.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/navigation_bar_height	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/navigation_bar_height_landscape	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	dimen/navigation_bar_width	() 0.000000dp
+ONLY-SYS	product	com.android.internal.systemui.navbar.hidegestural	string/hide_navigation_bar_mode_title	() "Hide Gestural Navigation Bar"
+ONLY-SYS	product	com.android.role.notes.enabled	bool/config_enableDefaultNotes	() true
+ONLY-SYS	product	com.android.role.notes.enabled	bool/config_enableDefaultNotesForWorkProfile	() true
+ONLY-SYS	product	com.android.role.notes.enabled	string/notes_role_enabled_overlay_title	() "Notes Role enabled"
+ONLY-SYS	product	com.android.internal.systemui.navbar.transparent	bool/config_navBarDefaultTransparent	() true
+ONLY-SYS	product	com.android.internal.systemui.navbar.transparent	string/transparent_navigation_bar_title	() "Transparent navigation bar"
+ONLY-SYS	product	android.auto_generated_rro_product__	anim/lock_screen_behind_enter_wallpaper	() (file) res/anim/lock_screen_behind_enter_wallpaper.xml type=XML
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_carriers_force_single_sim	() (array) size=2 ["openmx", "amxmx"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_customFirstBootspeedList	() (array) size=1 ["com.android.systemui"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_customInstallspeedList	() (array) size=1 ["com.google.android.dialer"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_defaultPinnerServiceFiles	() (array) size=12 ["/apex/com.android.art/javalib/core-oj.jar", "/apex/com.android.art/ja
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_motoDeviceProvisioningPackages	() (array) size=3 ["com.motorola.paks", "com.motorola.paks.notification", "com.motorola.cc
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_quickLaunchDefaultApps	() (array) size=2 ["com.google.android.dialer", "com.google.android.apps.messaging"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_telephonyEuiccDeviceCapabilities	() (array) size=4 ["gsm,9", "utran,9", "eutran,18", "nfc,17"]
+also-vendor	product	android.auto_generated_rro_product__	array/config_tether_usb_regexs	() (array) size=1 ["rndis\d"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/config_udfps_sensor_props	() (array) size=3 [611, 2066, 91]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/default_theme_colors	() (array) size=1 ["violetindigo,#7F63D8,false"]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/non_removable_euicc_slots	() (array) size=1 [1]
+ONLY-SYS	product	android.auto_generated_rro_product__	array/zz_moto_config_abnormal_job_service_name	() (array) size=1 ["com.whatsapp/androidx.work.impl.background.systemjob.SystemJobService"
+ONLY-SYS	product	android.auto_generated_rro_product__	array/zz_moto_config_ambientBrighteningThresholds	() (array) size=29 [39000, 19000, 12330, 9000, 7000, 5670, 4710, 4000, 3440, 3000, 2000, 1
+ONLY-SYS	product	android.auto_generated_rro_product__	array/zz_moto_config_ambientDarkeningThresholds	() (array) size=29 [853, 853, 853, 853, 853, 853, 853, 853, 853, 853, 700, 683, 666, 650, 
+ONLY-SYS	product	android.auto_generated_rro_product__	array/zz_moto_config_ambientThresholdLevels	() (array) size=28 [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 2, 3, 4, 5, 6, 7, 8, 9
+ONLY-SYS	product	android.auto_generated_rro_product__	array/zz_moto_config_motosafe_payjoy_channellist	() (array) size=6 ["openmx", "altmx", "tefmx", "attmx", "avaco", "openpe"]
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_anr_only_dump_self	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_app_power_stats_support	() true
+also-vendor	product	android.auto_generated_rro_product__	bool/config_automatic_brightness_available	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_device_callcomposer_available	(mcc310-mnc160) true (mcc310-mnc200) true (mcc310-mnc210) true (mcc310-mnc220) true (mcc31
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_device_chatbot_available	(mcc310-mnc160) true (mcc310-mnc200) true (mcc310-mnc210) true (mcc310-mnc220) true (mcc31
+also-vendor	product	android.auto_generated_rro_product__	bool/config_device_volte_available	() true
+also-vendor	product	android.auto_generated_rro_product__	bool/config_device_vt_available	() true
+also-vendor	product	android.auto_generated_rro_product__	bool/config_device_wfc_ims_available	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_double_tap_to_wake_supported	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_dozeAfterScreenOff	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_dozeAlwaysOnDisplayAvailable	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_dozeAlwaysOnEnabled	() false
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_enabled_frp_violation_suicide	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_isSupportQuickButton	() true
+also-vendor	product	android.auto_generated_rro_product__	bool/config_moto_wlc_supported	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_payjoy_dynamic_enabled	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_powerDecoupleAutoSuspendModeFromDisplay	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_powerDecoupleInteractiveModeFromDisplay	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_quick_capture_automatic_camera	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_refresh_rate_auto_lite_supported	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_safe_media_volume_enabled	(mcc310) true (mcc311) true (mcc312) true (mcc313) true (mcc314) true (mcc315) true (mcc31
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_searchAllEntrypointsEnabledDefault	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_smart_battery_available	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_udfps_full_keys_supported	() true
+also-vendor	product	android.auto_generated_rro_product__	bool/config_useDevInputEventForAudioJack	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/config_useFastHdrExitTransitions	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/device_idle_use_window_alarms	() false
+ONLY-SYS	product	android.auto_generated_rro_product__	bool/zz_moto_config_smart_rotation_enabled	() true
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/config_ai_key_position	() 874
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/config_dialogCornerRadius	() 24.000000dp
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/config_wallpaperMaxScale	() 1
+also-vendor	product	android.auto_generated_rro_product__	dimen/rounded_corner_radius	() 100.000000px
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/status_bar_height_landscape	() 28.000000dp
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/status_bar_height_portrait	() 130.000000px
+ONLY-SYS	product	android.auto_generated_rro_product__	dimen/status_bar_padding_top_portrait	() 14.000000px
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_activeTaskDurationHours	() 24
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_ai_key_location	() 1
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_aps_start_delay	() 30
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_bluetooth_operating_voltage_mv	() 3300
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_doublePressOnPowerBehavior	() 6
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_doubleTapPowerGestureMultiTargetDefaultAction	() 1
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_extraFreeKbytesAbsolute	() 100000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_minimumScreenOffTimeout	() 8000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_pinnerHomePinBytes	() 0
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_pinnerWebviewPinBytes	() 0
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_screenBrightnessDoze	() 17
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_vt_av_cam_sensor_delay	(mcc310-mnc30) 20 (mcc313-mnc100) 20 (mcc313-mnc110) 20 (mcc313-mnc120) 20 (mcc313-mnc130)
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_vt_av_display_delay	(mcc310-mnc30) 40 (mcc313-mnc100) 40 (mcc313-mnc110) 40 (mcc313-mnc120) 40 (mcc313-mnc130)
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_vt_av_dropset_feature	(mcc310-mnc30) 0 (mcc313-mnc100) 0 (mcc313-mnc110) 0 (mcc313-mnc120) 0 (mcc313-mnc130) 0 (
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/config_vt_av_playout_delay	(mcc310-mnc30) 10 (mcc313-mnc100) 10 (mcc313-mnc110) 10 (mcc313-mnc120) 10 (mcc313-mnc130)
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/device_idle_idle_pending_to_ms	() 60000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/device_idle_inactive_to_ms	() 15000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/device_idle_light_after_inactive_to_ms	() 60000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/device_idle_max_idle_pending_to_ms	() 60000
+ONLY-SYS	product	android.auto_generated_rro_product__	integer/device_idle_min_time_to_alarm_ms	() 600000
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_clockFontFamily	() "moto_time"
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_deviceSpecificDevicePolicyManagerService	() "com.android.server.devicepolicy.MotoEnterpriseDevicePolicyServiceExtension"
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_dozeComponent	() "com.android.systemui/com.android.systemui.doze.DozeService" (en-rXA) "[çöḿ.åñðŕöîð.šýš
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_mainBuiltInDisplayCutout	() "M -50,0 L 50,0 L 50,130 L -50,130 Z"
+also-vendor	product	android.auto_generated_rro_product__	string/config_mms_user_agent	() "motorolasignature"
+also-vendor	product	android.auto_generated_rro_product__	string/config_mms_user_agent_profile_url	() "http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf"
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_powerSaveModeChangedListenerPackage	() "com.motorola.maxesetting"
+ONLY-SYS	product	android.auto_generated_rro_product__	string/config_systemFinancedDeviceController	() "com.motorola.paks"
+ONLY-SYS	product	android.auto_generated_rro_product__	string/zz_moto_camera_pkg_name	() "com.motorola.camera5"
+ONLY-SYS	product	android.auto_generated_rro_product__	xml/bookmarks	() (file) res/xml/bookmarks.xml type=XML
+ONLY-SYS	product	com.motorola.android.overlay.freeform	integer/zz_moto_config_default_global_freeform_task_count	() 2
+ONLY-SYS	product	com.motorola.actions.overlay	string/config_defaultAdpativeChargingConfigPackage	() "com.motorola.actions"
+ONLY-SYS	product	com.motorola.overlay.launcher3	string/config_defaultAppPredictionService	() "com.motorola.launcher3/com.android.launcher3.appprediction.AppPredictionServiceImpl"
+ONLY-SYS	product	com.motorola.overlay.launcher3	string/config_recentsComponentName	() "com.motorola.launcher3/com.android.quickstep.RecentsActivity"
+ONLY-SYS	product	com.motorola.overlay.launcher3	string/config_secondaryHomePackage	() "com.motorola.launcher3"
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/config_systemui_batterycare_extreme_battery_saver	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/default_value_batterycare_appstandby	() false
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/default_value_batterycare_appstandby_restricted	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/default_value_batterycare_restrict_foreground	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_batterycare_appstandby_enable	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_batterycare_extreme_battery_saver_enable	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_restrict_foreground_enable	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_sleep_mode_enable	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_smart_background_enable	() true
+ONLY-SYS	product	com.motorola.batterycare.overlay	bool/feature_unified_background_management	() true
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	bool/zz_moto_config_moto_pen_buttons_enabled	() true
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	bool/zz_moto_config_moto_pen_default_hover_enabled	() true
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	drawable/moto_pointer_spot_hover	() (file) res/drawable/moto_pointer_spot_hover.png type=PNG
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	drawable/moto_pointer_spot_hover_vector	() (file) res/drawable/moto_pointer_spot_hover_vector.xml type=XML
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	drawable/pointer_spot_hover_icon	() (file) res/drawable/pointer_spot_hover_icon.xml type=XML
+ONLY-SYS	system_ext	com.motorola.android.overlay.moto_pen	drawable/pointer_spot_hover_vector_icon	() (file) res/drawable/pointer_spot_hover_vector_icon.xml type=XML
