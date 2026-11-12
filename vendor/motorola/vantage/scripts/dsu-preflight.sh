@@ -12,7 +12,7 @@ export MSYS_NO_PATHCONV=1
 
 # For an image you built yourself, pass the two values export-image.sh prints:
 #   IMAGE_SHA256=... IMAGE_SIZE=... bash dsu-preflight.sh <release-dir>
-IMAGE_SHA256="${IMAGE_SHA256:-5a007af90f7872a88a4f271205a0e9d87600a6cbb4e9479983fa4a56ae169db9}"
+IMAGE_SHA256="${IMAGE_SHA256:-94c1595d00d2302aaa572e543ec288203b3fb50d006f48b3b4780e70c97062bb}"
 IMAGE_SIZE="${IMAGE_SIZE:-3005071360}"   # KEY_SYSTEM_SIZE: the uncompressed image, in bytes
 USERDATA_SIZE=8589934592       # KEY_USERDATA_SIZE: 8 GiB for the guest
 SUPER_SIZE=31138512896         # gsid keeps this much free on a Virtual A/B device
@@ -25,7 +25,7 @@ DEVICE_FILE=/storage/emulated/0/Download/system_raw.gz
 
 ADB="${ADB:-adb}"
 ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
-REL="${1:-$ROOT/out/lineage_vantage-20261111-r2}"
+REL="${1:-$ROOT/out/lineage_vantage-20261111-r3}"
 GZ="$REL/system_raw.gz"
 fail=0
 say() { printf '  [%-7s] %s\n' "$1" "$2"; if [ "$1" = FAIL ]; then fail=1; fi; }

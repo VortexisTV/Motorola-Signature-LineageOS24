@@ -1,8 +1,8 @@
 # Preflight: preflight
 
-Generated: 2026-11-11T17:07:43
+Generated: 2026-11-11T19:37:08
 
-**PASS 30 / FAIL 0 / WARNING 3 / UNKNOWN 0**
+**PASS 31 / FAIL 0 / WARNING 3 / UNKNOWN 0**
 
 Static analysis only. PASS means the checked property holds in the files; it does not prove that the feature works on hardware.
 
@@ -35,11 +35,12 @@ Static analysis only. PASS means the checked property holds in the files; it doe
 | PASS | placement | `files.content` | 26 verbatim-installed files are byte-identical to stock |
 | PASS | placement | `files.present` | all 34 manifest files are present at their stock paths |
 | PASS | platform | `platform.api_levels` | system (SDK 37, LLNDK 202604) is not older than the vendor (SDK 36, board API 202504) |
-| PASS | selinux | `sepolicy.compile` | secilc compiled the system policy together with the stock vendor policy the way init does (12 CIL files, 1699754 byte policy) |
+| PASS | selinux | `sepolicy.compile` | secilc compiled the system policy together with the stock vendor policy the way init does (12 CIL files, 1699586 byte policy) |
 | PASS | selinux | `sepolicy.inputs` | system provides the platform policy and the 202504 mapping file |
 | PASS | selinux | `sepolicy.mapping:moto_app` | moto_app_202504 is populated by the system policy with moto_camera_app (39 references in the stock vendor policy bind to it) |
 | PASS | selinux | `sepolicy.mapping:moto_camera_app` | moto_camera_app_202504 is populated by the system policy with moto_camera_app (12 references in the stock vendor policy bind to it) |
 | PASS | selinux | `sepolicy.mapping:vendor_qtelephony` | vendor_qtelephony_202504 is populated by the system policy with vendor_qtelephony (23 references in the stock vendor policy bind to it) |
+| PASS | selinux | `sepolicy.mapping:vendor_wlc_public_prop` | vendor_wlc_public_prop_202504 is populated by the system policy with vendor_wlc_public_prop (10 references in the stock vendor policy bind to it) |
 | PASS | selinux | `sepolicy.seapp_domains` | every system-side seapp_contexts domain is declared |
 | PASS | signing | `apk.signature` | app certificates match the manifest intent |
 | PASS | telephony | `telephony.ims_binding` | org.codeaurora.ims declares an android.telephony.ims.ImsService guarded by BIND_IMS_SERVICE |
@@ -63,7 +64,7 @@ Static analysis only. PASS means the checked property holds in the files; it doe
 
 1 empty versioned attributes belong to labels the vendor's own context files assign; vendor rules on those objects are dead (review each)
 
-- 1541 versioned attributes referenced by vendor/odm rules, 1411 populated, 130 empty
+- 1541 versioned attributes referenced by vendor/odm rules, 1412 populated, 129 empty
 - vendor_hal_atfwd_hwservice_202504: vendor_hwservice_contexts: vendor.qti.hardware.radio.atcmdfwd::IAtCmdFwd
 
 ### PASS: `apk.signature`

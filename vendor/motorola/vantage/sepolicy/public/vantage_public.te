@@ -23,3 +23,11 @@ attribute vendor_hal_imsvthal;
 attribute vendor_hal_imsvthal_client;
 attribute motoappdomain;
 attribute moto_qcxdsp_domain;
+
+# Label of vendor.mpctl.init.complete (private/property_contexts), which the Qualcomm perf HAL
+# sets when it has finished starting. Stock declares the type in Qualcomm's system_ext public
+# policy as a system_public property, and the stock vendor policy lets the perf HAL
+# (vendor_hal_perf_default) set it and the display HAL and SurfaceFlinger read it, through
+# vendor_wlc_public_prop_202504. Without the type the property falls under vendor_default_prop
+# and the perf HAL's write is denied at every boot (seen on r2, 2026-11-11).
+system_public_prop(vendor_wlc_public_prop)

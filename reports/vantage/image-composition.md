@@ -2,9 +2,9 @@
 
 Image `/work/lineage/out/target/product/generic_arm64/system.img`
 
-SHA-256 `5a007af90f7872a88a4f271205a0e9d87600a6cbb4e9479983fa4a56ae169db9`
+SHA-256 `94c1595d00d2302aaa572e543ec288203b3fb50d006f48b3b4780e70c97062bb`
 
-PASS 25 / FAIL 0 / WARNING 1 / UNKNOWN 0
+PASS 26 / FAIL 0 / WARNING 1 / UNKNOWN 0
 
 | Status | Check | Finding |
 |---|---|---|
@@ -26,13 +26,14 @@ PASS 25 / FAIL 0 / WARNING 1 / UNKNOWN 0
 | PASS | `built.permissions` | 2 privileged-permission allowlists in the image equal the repository files: /system_ext/etc/permissions/privapp-permissions-vantage-telephony.xml, /product/etc/permissions/privapp-permissions-vantage-camera.xml |
 | PASS | `built.privapp_partition` | org.codeaurora.ims (/system_ext/priv-app/ims/ims.apk) has its allowlist on the same partition: privapp-permissions-vantage-telephony.xml |
 | PASS | `built.privapp_partition` | com.motorola.camera5 (/product/priv-app/MotCamera5/MotCamera5.apk) has its allowlist on the same partition: privapp-permissions-vantage-camera.xml |
-| PASS | `built.sepolicy` | system_ext policy in the image declares vendor_qtelephony, moto_camera_app and carries all 4 seapp_contexts entries |
-| PASS | `built.properties` | all 27 stock properties of properties.mk are in the build.prop of the partition stock uses |
+| PASS | `built.sepolicy` | system_ext policy in the image declares vendor_qtelephony, moto_camera_app, vendor_wlc_public_prop and carries all 4 seapp_contexts and 2 property_contexts entries |
+| PASS | `built.properties` | all 29 properties of properties.mk are in the build.prop of the partition it names |
 | PASS | `built.identity` | ro.product.device/name/brand/manufacturer/model will be vantage/vantage_g/motorola/motorola/motorola signature: the stock values |
 | PASS | `built.audio_vendor_extension` | audio parameter parser service, loader, stock library and its dependency, service and file labels, policy domain and both properties are in the image |
 | PASS | `built.webview_default` | the effective WebView provider list (android.auto_generated_rro_product__) has com.android.webview as its default, which is /system/product/app/webview/webview.apk; services.jar skips providers that are not installed (LineageOS isProviderAvailable), list order com.google.android.webview, com.google.android.webview.beta, com.google.android.webview.dev, com.google.android.webview.canary, com.android.webview |
 | PASS | `built.media_profiles` | init copies the vendor's media variant to ro.media.xml_variant.profiles; the stock vendor image has a profile file for each of _canoe_sku1, _canoe_sku2, _canoe_sku3, _canoe_v1, _canoe_v2, _canoe_v3 |
 | PASS | `built.vendor_framework_flag` | ro.vendor.qti.va_aosp.support=1 is set, has its own type vantage_vendor_framework_prop, hal_camera_server may read it, and no stock vendor or odm property_contexts names it |
+| PASS | `built.sf_timing` | SurfaceFlinger will run in work-duration mode with the vendor's durations (ns: late.sf=10500000, late.app=13666666, early.sf=10500000, early.app=13666666, earlyGl.sf=10500000, earlyGl.app=13666666) and an ADPF CPU hint session; no phase-offset property or configstore HAL that would make it abort |
 | WARNING | `overlays.precedence` | 25 values set by our 6 overlays; 47 overlays in the image and the stock /vendor and /odm overlays for the same targets were compared: 0 active overlay(s) with higher precedence set a different value, 11 could at run time, 1 are overridden by ours or inactive, 4 set the same value |
 
 ## `layout.skip_mount`

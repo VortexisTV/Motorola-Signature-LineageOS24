@@ -11,6 +11,8 @@
 ;; product mapping: moto_app_202504 includes moto_camera_app (so the vendor's rules for Motorola
 ;; apps, e.g. the image-tuner, panel and param-updater HAL clients, also apply to the camera, as
 ;; on stock A17). moto_app itself is not ported.
+;; system_ext mapping, r3: vendor_wlc_public_prop_202504, the label of the perf HAL's
+;; vendor.mpctl.init.complete (public/vantage_public.te).
 (typeattributeset vendor_qtelephony_202504 (vendor_qtelephony))
 (expandtypeattribute (vendor_qtelephony_202504) true)
 (typeattribute vendor_qtelephony_202504)
@@ -20,3 +22,6 @@
 (typeattributeset moto_app_202504 (moto_camera_app))
 (expandtypeattribute (moto_app_202504) true)
 (typeattribute moto_app_202504)
+(typeattributeset vendor_wlc_public_prop_202504 (vendor_wlc_public_prop))
+(expandtypeattribute (vendor_wlc_public_prop_202504) true)
+(typeattribute vendor_wlc_public_prop_202504)

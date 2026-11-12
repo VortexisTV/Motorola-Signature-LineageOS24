@@ -1,6 +1,6 @@
 {
  "title": "Preflight: preflight",
- "generated": "2026-11-11T17:07:43",
+ "generated": "2026-11-11T19:37:08",
  "context": {
   "manifest": "/proj/vendor/motorola/vantage/proprietary-files.txt",
   "maps": "/system=/work/lineage/out/target/product/generic_arm64/system /system_ext=/work/lineage/out/target/product/generic_arm64/system/system_ext /product=/work/lineage/out/target/product/generic_arm64/system/product /apex=/work/lineage/out/target/product/generic_arm64/apex /vendor=/work/fw/A171WVH.21-16-16/root/vendor /odm=/work/fw/A171WVH.21-16-16/root/odm"
@@ -9,7 +9,7 @@
   "FAIL": 0,
   "WARNING": 3,
   "UNKNOWN": 0,
-  "PASS": 30
+  "PASS": 31
  },
  "results": [
   {
@@ -219,12 +219,19 @@
    "details": []
   },
   {
+   "id": "sepolicy.mapping:vendor_wlc_public_prop",
+   "area": "selinux",
+   "status": "PASS",
+   "summary": "vendor_wlc_public_prop_202504 is populated by the system policy with vendor_wlc_public_prop (10 references in the stock vendor policy bind to it)",
+   "details": []
+  },
+  {
    "id": "sepolicy.unmapped",
    "area": "selinux",
    "status": "WARNING",
    "summary": "1 empty versioned attributes belong to labels the vendor's own context files assign; vendor rules on those objects are dead (review each)",
    "details": [
-    "1541 versioned attributes referenced by vendor/odm rules, 1411 populated, 130 empty",
+    "1541 versioned attributes referenced by vendor/odm rules, 1412 populated, 129 empty",
     "vendor_hal_atfwd_hwservice_202504: vendor_hwservice_contexts: vendor.qti.hardware.radio.atcmdfwd::IAtCmdFwd"
    ]
   },
@@ -232,7 +239,7 @@
    "id": "sepolicy.compile",
    "area": "selinux",
    "status": "PASS",
-   "summary": "secilc compiled the system policy together with the stock vendor policy the way init does (12 CIL files, 1699754 byte policy)",
+   "summary": "secilc compiled the system policy together with the stock vendor policy the way init does (12 CIL files, 1699586 byte policy)",
    "details": []
   },
   {

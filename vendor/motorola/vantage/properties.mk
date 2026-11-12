@@ -7,7 +7,8 @@
 # file or by a file of this image. Re-checked against stock Android 17 (A171WVH.21-16-16) with
 # scripts/prop_users.py on 2026-11-11: every value is unchanged there (FIRMWARE_A17.md section 4).
 # The partition is the one stock uses, which keeps the precedence the same (product overrides
-# vendor/odm, system is overridden by them).
+# vendor/odm, system is overridden by them). Exception: the SurfaceFlinger section near the end
+# holds two values of this ROM's own, not stock's (reason there).
 
 # --- Radio -------------------------------------------------------------------------------
 # Default network mode 26 = NR/LTE/GSM/WCDMA for both slots. Without it the framework falls
@@ -95,6 +96,29 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # was dropped.
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.dolby.upmapping.filter.enable=false
+
+# --- SurfaceFlinger frame timing (r3; not stock values) ---------------------------------------
+# Measured on r2 (2026-11-11, reports/ui-smoothness-r2.md): with the quick settings shade or the
+# launcher's app drawer blurred, every layer is composed on the GPU and SurfaceFlinger needs about
+# 10.5 ms per frame while the CPU stays at its lowest clocks; at 120 Hz that misses every other
+# vsync (about 40 % janky frames; with window blurs off, 1-2 %). Stock does not have this problem
+# because its system runs Qualcomm's SurfaceFlinger and boost libraries, which this ROM does not.
+#
+# use_phase_offsets_as_durations=1: the vendor already sets debug.sf.{late,early,earlyGl}.{sf,app}
+# .duration (SurfaceFlinger 10.5 ms, apps 13.67 ms) but also =0, so AOSP's SurfaceFlinger ignores
+# those durations and gives itself vsync + 1 ms to the next vsync (7.3 ms at 120 Hz). With =1 it
+# uses the vendor's durations. Costs about one frame of extra latency. SurfaceFlinger aborts at
+# start in this mode if any phase-offset property is set; none is, on this vendor
+# (check_image_composition.py, built.sf_timing).
+# enable_adpf_cpu_hint=true: SurfaceFlinger reports its frame times to the power HAL (ADPF hint
+# session), which may raise the CPU clocks for its threads when it runs late. The vendor's power
+# HAL supports hint sessions, and its SELinux policy lets it set scheduling of surfaceflinger.
+#
+# Product, because /product/etc/build.prop is read after /vendor/build.prop and so overrides the
+# vendor's use_phase_offsets_as_durations=0.
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.use_phase_offsets_as_durations=1 \
+    debug.sf.enable_adpf_cpu_hint=true
 
 # --- Call audio: vendor parameters for the AIDL audio HAL (audio/vendorext/README.md) --------
 PRODUCT_SYSTEM_EXT_PROPERTIES += \

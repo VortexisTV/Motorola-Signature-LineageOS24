@@ -387,12 +387,21 @@ def check_built(root, repo, tools, platform):
     have_lines = {frozenset(l.split()) for l in (sel / "system_ext_seapp_contexts").read_text().split(NL) if l.strip()}
     want_lines = [l for l in (v / "sepolicy/private/seapp_contexts").read_text().split(NL) if l.strip() and not l.startswith("#")]
     missing = [l for l in want_lines if frozenset(l.split()) not in have_lines]
-    types = re.findall(r"^type ([a-z0-9_]+)", (v / "sepolicy/public/vantage_public.te").read_text(), re.M)
+    # Our property_contexts lines, too (a property takes the label of its longest matching prefix,
+    # so a missing line silently falls back to a broader label).
+    have_props = {tuple(l.split()[:2]) for l in (sel / "system_ext_property_contexts").read_text().split(NL)
+                  if l.strip() and not l.startswith("#")}
+    want_props = [l for l in (v / "sepolicy/private/property_contexts").read_text().split(NL)
+                  if l.strip() and not l.startswith("#")]
+    missing += [l for l in want_props if tuple(l.split()[:2]) not in have_props]
+    public = (v / "sepolicy/public/vantage_public.te").read_text()
+    types = re.findall(r"^type ([a-z0-9_]+)", public, re.M) + re.findall(r"^system_\w+_prop\(([a-z0-9_]+)\)", public, re.M)
     cil = (sel / "system_ext_sepolicy.cil").read_text()
     no_type = [t for t in types if "(type %s)" % t not in cil]
     add("FAIL" if missing or no_type else "PASS", "built.sepolicy",
         "missing: " + "; ".join(missing + no_type) if missing or no_type else
-        "system_ext policy in the image declares %s and carries all %d seapp_contexts entries" % (", ".join(types), len(want_lines)))
+        "system_ext policy in the image declares %s and carries all %d seapp_contexts and %d property_contexts entries" % (
+            ", ".join(types), len(want_lines), len(want_props)))
 
 
 def read_props(path):
@@ -423,7 +432,7 @@ def check_properties(root, repo, tools):
             part = None
     bad = ["%s: %s=%s, image has %s" % (p_.lower(), k, val, have[p_].get(k)) for p_, k, val in want if have[p_].get(k) != val]
     add("FAIL" if bad or not want else "PASS", "built.properties",
-        "; ".join(bad) if bad else "all %d stock properties of properties.mk are in the build.prop of the partition stock uses" % len(want), bad)
+        "; ".join(bad) if bad else "all %d properties of properties.mk are in the build.prop of the partition it names" % len(want), bad)
 
     # What init will make of the identity: base properties set in /product win; brand, model and
     # manufacturer are derived from ro.product.product.* (default source order starts with product).
@@ -551,6 +560,45 @@ def check_media_and_flag(root, stock):
         "and no stock vendor or odm property_contexts names it" % (name, label))
 
 
+def check_sf_timing(root, stock):
+    """SurfaceFlinger's frame timing as init will set it: the work-duration mode is on, the vendor's
+    durations are there, and nothing SurfaceFlinger aborts on in that mode is set (WorkDuration's
+    validateSysprops in frameworks/native, VsyncConfiguration.cpp)."""
+    # init's order (system/core/init/property_service.cpp); a later file, and a later line, wins.
+    order = [root / "system/build.prop", root / "system/system_ext/etc/build.prop",
+             stock / "system_dlkm/etc/build.prop", stock / "vendor/default.prop", stock / "vendor/build.prop",
+             stock / "vendor_dlkm/etc/build.prop", stock / "odm_dlkm/etc/build.prop", stock / "odm/etc/build.prop",
+             root / "system/product/etc/build.prop"]
+    eff, src = {}, {}
+    for f in order:
+        for k, val in read_props(f).items():
+            eff[k], src[k] = val, f
+    problems = []
+    if eff.get("debug.sf.use_phase_offsets_as_durations") not in ("1", "true"):
+        problems.append("debug.sf.use_phase_offsets_as_durations is %s (from %s)" % (
+            eff.get("debug.sf.use_phase_offsets_as_durations"), src.get("debug.sf.use_phase_offsets_as_durations")))
+    if eff.get("debug.sf.enable_adpf_cpu_hint") != "true":
+        problems.append("debug.sf.enable_adpf_cpu_hint is %s" % eff.get("debug.sf.enable_adpf_cpu_hint"))
+    fatal = ["ro.surface_flinger.vsync_event_phase_offset_ns", "ro.surface_flinger.vsync_sf_event_phase_offset_ns"] + [
+        "debug.sf.%s_phase_offset_ns" % n for n in (
+            "early", "early_gl", "early_app", "early_gl_app", "high_fps_late_app", "high_fps_late_sf",
+            "high_fps_early", "high_fps_early_gl", "high_fps_early_app", "high_fps_early_gl_app")]
+    for k in fatal:
+        if k in eff:
+            problems.append("%s=%s is set (%s): SurfaceFlinger aborts at start in work-duration mode" % (k, eff[k], src[k]))
+    # The two ro.surface_flinger offsets also come from the legacy configstore HAL when it exists.
+    manifests = [p for d in ("vendor/etc/vintf", "odm/etc/vintf") if (stock / d).is_dir() for p in (stock / d).rglob("*.xml")]
+    if any("android.hardware.configstore" in p.read_text(errors="replace") for p in manifests):
+        problems.append("the stock vendor declares a configstore HAL, which may supply phase offsets")
+    names = ["debug.sf.%s.%s.duration" % (w, s) for w in ("late", "early", "earlyGl") for s in ("sf", "app")]
+    durations = ", ".join("%s=%s" % (n[len("debug.sf."):-len(".duration")], eff.get(n, "unset")) for n in names)
+    if any(n not in eff for n in names):
+        problems.append("not every duration is set (%s): the missing ones default to one vsync" % durations)
+    add("FAIL" if problems else "PASS", "built.sf_timing",
+        "; ".join(problems) if problems else "SurfaceFlinger will run in work-duration mode with the vendor's durations "
+        "(ns: %s) and an ADPF CPU hint session; no phase-offset property or configstore HAL that would make it abort" % durations)
+
+
 def load_props(files):
     props = {}
     for f in files:
@@ -653,6 +701,7 @@ def main():
     check_built(root, repo, tools, platform)
     check_properties(root, repo, tools)
     check_media_and_flag(root, stock)
+    check_sf_timing(root, stock)
     check_precedence(root, stock, repo, args.stock_overlays, tools)
     counts = {s: sum(1 for r in RESULTS if r["status"] == s) for s in ("PASS", "FAIL", "WARNING", "UNKNOWN")}
     header = {"image": args.image or "", "sha256": sha256(args.image) if args.image else "",

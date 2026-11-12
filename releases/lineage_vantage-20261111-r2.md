@@ -1,5 +1,10 @@
 # lineage_vantage 2026-11-11 r2 (test image)
 
+> Booted by the owner on 2026-11-11. Known issue found there: quick settings and the app drawer
+> run at about 60 fps with blur ([reports/ui-smoothness-r2.md](../reports/ui-smoothness-r2.md));
+> workaround: Developer options > Allow window-level blurs off. Superseded by
+> [r3](lineage_vantage-20261111-r3.md).
+
 LineageOS 24.0 (Android 17) system image for the **Motorola Signature** (`vantage`) on stock
 firmware **A171WVH.21-16-16**, with microG. Same base, keys, patch level (2026-11-01) and
 contents as r1 ([lineage_vantage-20261111.md](lineage_vantage-20261111.md), which also lists the

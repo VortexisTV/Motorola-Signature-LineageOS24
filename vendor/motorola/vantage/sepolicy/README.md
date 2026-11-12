@@ -11,6 +11,7 @@ would bind to nothing. This directory re-declares the minimum set:
 | `moto_camera_app` (type) | product public | `com.motorola.camera5` |
 | `vendor_hal_atfwd_client`, `vendor_hal_imsvthal_client` (attributes) | system_ext public | IMS |
 | `motoappdomain`, `moto_qcxdsp_domain` (attributes) | system_ext public | Camera |
+| `vendor_wlc_public_prop` (property type, r3) | system_ext public | `vendor.mpctl.init.complete`: set by the perf HAL, read by the display HAL and SurfaceFlinger |
 
 Because they are **public** types, the build maps them into the system_ext mapping file of
 its own platform version, and the stock vendor rules attach through the mapping for the
@@ -23,7 +24,10 @@ hold for these domains: `vendor_qtelephony_202504` and `moto_camera_app_202504` 
 system_ext mapping), and `moto_app_202504` including `moto_camera_app` (stock product
 mapping, new on A17: the vendor's rules for Motorola apps, such as the image-tuner, panel and
 param-updater HAL clients, apply to the A17 camera; `moto_app` itself is not ported). The
-attributes are not versioned and need no entry.
+attributes are not versioned and need no entry. r3 adds a fourth, `vendor_wlc_public_prop_202504`
+(stock system_ext mapping), with stock's `property_contexts` line for `vendor.mpctl.init.complete`:
+without them the property fell under `vendor_default_prop` and the perf HAL's write was denied at
+every boot (r2, reports/ui-smoothness-r2.md).
 
 Android 17's `hal_client_domain()` also adds `memfd_file` rules between a HAL's clients and the
 HAL. Stock A17 uses the macro for the IMS app's ATFWD and IMS-VT HALs, so
