@@ -2,7 +2,7 @@
 
 Image `/work/lineage/out/target/product/generic_arm64/system.img`
 
-SHA-256 `94c1595d00d2302aaa572e543ec288203b3fb50d006f48b3b4780e70c97062bb`
+SHA-256 `85fe7a9b6395a1eed5d975803ac23b19f0427779de76fbc3713c924369de0195`
 
 PASS 26 / FAIL 0 / WARNING 1 / UNKNOWN 0
 

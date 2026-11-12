@@ -1,6 +1,6 @@
 {
  "title": "Preflight: preflight",
- "generated": "2026-11-11T19:37:08",
+ "generated": "2026-11-12T07:39:30",
  "context": {
   "manifest": "/proj/vendor/motorola/vantage/proprietary-files.txt",
   "maps": "/system=/work/lineage/out/target/product/generic_arm64/system /system_ext=/work/lineage/out/target/product/generic_arm64/system/system_ext /product=/work/lineage/out/target/product/generic_arm64/system/product /apex=/work/lineage/out/target/product/generic_arm64/apex /vendor=/work/fw/A171WVH.21-16-16/root/vendor /odm=/work/fw/A171WVH.21-16-16/root/odm"
@@ -264,7 +264,7 @@
    "status": "PASS",
    "summary": "system image (2866 MiB) fits the dynamic partition group with 10.1 GiB to spare",
    "details": [
-    "system image 3005071360 bytes; group mot_dp_group_a max 31134318592; other stock partitions 17328971776; available for system 13805346816"
+    "system image 3005083648 bytes; group mot_dp_group_a max 31134318592; other stock partitions 17328971776; available for system 13805346816"
    ]
   },
   {

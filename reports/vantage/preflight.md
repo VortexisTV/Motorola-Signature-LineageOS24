@@ -1,6 +1,6 @@
 # Preflight: preflight
 
-Generated: 2026-11-11T19:37:08
+Generated: 2026-11-12T07:39:30
 
 **PASS 31 / FAIL 0 / WARNING 3 / UNKNOWN 0**
 
@@ -80,7 +80,7 @@ app certificates match the manifest intent
 
 system image (2866 MiB) fits the dynamic partition group with 10.1 GiB to spare
 
-- system image 3005071360 bytes; group mot_dp_group_a max 31134318592; other stock partitions 17328971776; available for system 13805346816
+- system image 3005083648 bytes; group mot_dp_group_a max 31134318592; other stock partitions 17328971776; available for system 13805346816
 
 ### PASS: `overlay.targets:android.overlay.vantage.device`
 

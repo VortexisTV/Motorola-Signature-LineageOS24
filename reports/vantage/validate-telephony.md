@@ -1,6 +1,6 @@
 # Telephony validation: validate-telephony
 
-Generated: 2026-11-11T19:37:21
+Generated: 2026-11-12T07:39:43
 
 **PASS 15 / FAIL 0 / WARNING 2 / UNKNOWN 7**
 

@@ -1,11 +1,13 @@
 # lineage_vantage 2026-11-11 r3 (test image)
 
+> Superseded by [r4](lineage_vantage-20261112-r4.md) (adds the charging limit).
+
 LineageOS 24.0 (Android 17) system image for the **Motorola Signature** (`vantage`) on stock
 firmware **A171WVH.21-16-16**, with microG. Same base, keys, patch level (2026-11-01) and
 contents as r2 ([lineage_vantage-20261111-r2.md](lineage_vantage-20261111-r2.md)), plus the
 change below. Built on 2026-11-11 (build 9 in `BUILDING.md` section 9).
 
-## New in r3: smoother quick settings and launcher (to be confirmed on the phone)
+## New in r3: smoother quick settings and launcher
 
 On r2 the GPU works, but pulling down quick settings or opening the app drawer ran at about
 60 fps instead of 120, with about 40 % janky frames (measured over adb,
@@ -26,7 +28,8 @@ r3 changes three things:
   SELinux label, missing on r1/r2, is back as on stock.
 
 Static: all three are in the image, and SurfaceFlinger's start-up conditions for the new mode
-are met (`built.sf_timing`). Not yet measured on the phone. If quick settings still stutters,
+are met (`built.sf_timing`). On the phone: "r3 is good on performance now" (owner's report,
+2026-11-11; not measured over adb). If quick settings still stutters on another setup,
 turn off **Developer options > Allow window-level blurs**: on r2 that gave a steady 120 fps.
 
 ## Files
@@ -46,8 +49,8 @@ entries in `built.sepolicy`, `sepolicy.mapping:vendor_wlc_public_prop`, and the 
 lets the perf HAL set the property, the display HAL read it and the power HAL set the scheduling
 of SurfaceFlinger.
 
-On the phone, r1 and r2 booted (home screen, calls, Motorola Camera; owner's report). r3 has not
-been booted.
+On the phone, r1 and r2 booted (home screen, calls, Motorola Camera; owner's report). r3 booted
+and runs smoothly (owner's report, 2026-11-11).
 
 ## Install
 

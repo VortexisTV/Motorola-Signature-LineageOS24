@@ -1,6 +1,11 @@
 [
  {
   "status": "PASS",
+  "check": "patch.tree:lineage-sdk",
+  "summary": "0001-health-charging-limit-through-motorola-imotohealth.patch is applied in the source tree"
+ },
+ {
+  "status": "PASS",
   "check": "patch.tree:packages/apps/QcRilAm",
   "summary": "0001-per-slot-aidl-response-and-recovery.patch is applied in the source tree"
  },
@@ -13,6 +18,11 @@
   "status": "PASS",
   "check": "patch.tree:vendor/apn",
   "summary": "0001-allow-a-device-apn-database.patch is applied in the source tree"
+ },
+ {
+  "status": "PASS",
+  "check": "patch.image:lineage-sdk",
+  "summary": "/system/framework/org.lineageos.platform.jar contains \"motorola.hardware.health.IMotoHealth\""
  },
  {
   "status": "PASS",

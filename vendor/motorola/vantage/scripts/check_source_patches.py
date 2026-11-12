@@ -55,7 +55,7 @@ def probe_bytes(path, needle, what):
     if not path.is_file():
         return "FAIL", "%s is not in the image" % what
     data = path.read_bytes()
-    if path.suffix == ".apk":
+    if path.suffix in (".apk", ".jar"):
         with zipfile.ZipFile(path) as z:
             data = b"".join(z.read(n) for n in z.namelist() if n.endswith(".dex"))
     if needle.encode() in data:
@@ -95,6 +95,8 @@ def main():
             "setRequestInterface has not returned after 10 s", "QcRilAm.apk"),
         "vendor/apn": lambda: probe_pinned(args, "product/etc/apns-conf.xml",
                                            "LineageOS's generated APN list is not installed in its place"),
+        "lineage-sdk": lambda: probe_bytes(args.root / "system/framework/org.lineageos.platform.jar",
+                                           "motorola.hardware.health.IMotoHealth", "/system/framework/org.lineageos.platform.jar"),
     }
     patches = sorted((args.repo / "patches").rglob("*.patch"))
     seen = set()

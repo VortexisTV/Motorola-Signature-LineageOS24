@@ -1,12 +1,12 @@
 # Compatibility and status: LineageOS 24 for the Motorola Signature on stock Android 17
 
-Last updated 2026-11-11, for the image `lineage_vantage-20261111-r3` (build 9, `system.img`
-SHA-256 `94c1595d00d2302aaa572e543ec288203b3fb50d006f48b3b4780e70c97062bb`). `validate-image.sh`
-on that image: exit status 0, 100 PASS, 0 FAIL, 9 WARNING, 13 UNKNOWN, 1 INFO (reports in
-`reports/vantage/`). r2 (build 8, `5a007af9…`) differs only by SurfaceFlinger's frame timing and
-the perf HAL's property label; r1 (build 7, `08286f83…`) also by the status bar padding, the
+Last updated 2026-11-12, for the image `lineage_vantage-20261112-r4` (build 11, `system.img`
+SHA-256 `85fe7a9b6395a1eed5d975803ac23b19f0427779de76fbc3713c924369de0195`). `validate-image.sh`
+on that image: exit status 0, 102 PASS, 0 FAIL, 9 WARNING, 13 UNKNOWN, 1 INFO (reports in
+`reports/vantage/`). r3 (build 9, `94c1595d…`) differs only by the charging-control patch; r2
+(build 8, `5a007af9…`) also by SurfaceFlinger's frame timing and the perf HAL's property label; r1 (build 7, `08286f83…`) also by the status bar padding, the
 corner radius and the refresh rate settings. The device column describes r1, plus the r2
-measurements in the GPU row; r3 has not been booted. Columns:
+measurements in the GPU row and the owner's report on r3 there. Columns:
 
 - **Static**: what host-side analysis of sources, stock firmware and the built image established
   (PASS / FAIL / WARNING / UNKNOWN, with the check's name in `code`).
@@ -73,7 +73,8 @@ works.
 | Display cutout, status bar, fingerprint position, ambient display (`VantageDeviceOverlay`) | PASS (`built.overlay`: 13 values equal the source; `overlays.precedence`: no active overlay overrides them, some optional cutout emulations could at run time) | r1: status bar laid out around the punch hole (screenshots), but the clock sat almost in the left rounded corner (owner). r2 adds stock's SystemUI `rounded_corner_content_padding` (30px) and framework `rounded_corner_radius` (100px): r2 booted, clock position not reported yet | stock values |
 | Brightness, Night Light, colour modes | from the stock `/vendor` overlay (unchanged) | UNKNOWN | |
 | Refresh rate | stock `/vendor` overlay: default peak 120 Hz, minimum 24 Hz. Panel modes 165, 120, 90, 60, 30, 24 Hz (A16 captures; 165 Hz is a mode group of its own). r2: Settings > Display > Maximum / Minimum refresh rate (`VantageSettingsOverlay`); 165 Hz needs both set to 165 | r2 booted; the new settings not reported on yet (r2 ran at the default 24-120 Hz during the smoothness measurement) | PORTING_A17.md |
-| GPU, UI smoothness | r3: PASS `built.sf_timing` (SurfaceFlinger in work-duration mode with the vendor's durations, ADPF CPU hint on, no phase-offset property it would abort on), `sepolicy.mapping:vendor_wlc_public_prop` | r2 (measured over adb, `reports/ui-smoothness-r2.md`): GPU works (Adreno 829, GLES SurfaceFlinger, Vulkan HWUI). Quick settings and app drawer 40 % janky (60 fps) with blur, 1-2 % with window blurs off. r3 not yet measured | PORTING_A17.md; workaround on r2: Developer options, "Allow window-level blurs" off |
+| GPU, UI smoothness | r3: PASS `built.sf_timing` (SurfaceFlinger in work-duration mode with the vendor's durations, ADPF CPU hint on, no phase-offset property it would abort on), `sepolicy.mapping:vendor_wlc_public_prop` | r2 (measured over adb, `reports/ui-smoothness-r2.md`): GPU works (Adreno 829, GLES SurfaceFlinger, Vulkan HWUI). Quick settings and app drawer 40 % janky (60 fps) with blur, 1-2 % with window blurs off. r3: "good on performance now" (owner's report, 2026-11-11; not measured over adb) | PORTING_A17.md; workaround on r2: Developer options, "Allow window-level blurs" off |
+| Charging limit (Settings > Battery > Charging control) | r4: `patch.image:lineage-sdk` and the policy queries (system_server may find and call Motorola's health HAL) | r4 not yet seen on the phone | PORTING_A17.md; LineageOS's page, driving the stock kernel thresholds through `motorola.hardware.health` |
 | WebView | PASS (`built.webview_default`: `com.android.webview`; LineageOS skips uninstalled providers) | UNKNOWN | |
 | Wi-Fi | standard vendor HAL | r1: connected (Wi-Fi icon in the owner's screenshot) | |
 | Bluetooth, GNSS, NFC, sensors, fingerprint | standard vendor HALs, unchanged from A16 | UNKNOWN (untested on A16 as well) | |
@@ -101,6 +102,5 @@ hardware items only a phone can answer.
 4. `adb root` / adb at first boot: LineageOS's default kept; restoring the A16 behaviour is the
    owner's decision (security-relevant).
 5. Licence: QcRilAm still has no licence file (as on A16).
-6. UI smoothness on r3: repeat the r2 measurement (`reports/ui-smoothness-r2.md`). If blur still
-   drops frames, the remaining difference to stock is Qualcomm's SurfaceFlinger extensions and the
-   `QPerformance`/`UxPerformance` boost hints, which would mean porting framework code.
+6. UI smoothness: the owner reports r3 smooth. A measurement with the r2 method
+   (`reports/ui-smoothness-r2.md`) would put numbers on it, including the extra frame of latency.

@@ -12,8 +12,8 @@ export MSYS_NO_PATHCONV=1
 
 # For an image you built yourself, pass the two values export-image.sh prints:
 #   IMAGE_SHA256=... IMAGE_SIZE=... bash dsu-preflight.sh <release-dir>
-IMAGE_SHA256="${IMAGE_SHA256:-94c1595d00d2302aaa572e543ec288203b3fb50d006f48b3b4780e70c97062bb}"
-IMAGE_SIZE="${IMAGE_SIZE:-3005071360}"   # KEY_SYSTEM_SIZE: the uncompressed image, in bytes
+IMAGE_SHA256="${IMAGE_SHA256:-85fe7a9b6395a1eed5d975803ac23b19f0427779de76fbc3713c924369de0195}"
+IMAGE_SIZE="${IMAGE_SIZE:-3005083648}"   # KEY_SYSTEM_SIZE: the uncompressed image, in bytes
 USERDATA_SIZE=8589934592       # KEY_USERDATA_SIZE: 8 GiB for the guest
 SUPER_SIZE=31138512896         # gsid keeps this much free on a Virtual A/B device
 # Stock Android 17 A171WVH.21-16-16, the firmware this image was built and checked against.
@@ -25,7 +25,7 @@ DEVICE_FILE=/storage/emulated/0/Download/system_raw.gz
 
 ADB="${ADB:-adb}"
 ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
-REL="${1:-$ROOT/out/lineage_vantage-20261111-r3}"
+REL="${1:-$ROOT/out/lineage_vantage-20261112-r4}"
 GZ="$REL/system_raw.gz"
 fail=0
 say() { printf '  [%-7s] %s\n' "$1" "$2"; if [ "$1" = FAIL ]; then fail=1; fi; }

@@ -1,0 +1,259 @@
+health: charging limit through Motorola's IMotoHealth HAL
+
+Project: lineage-sdk (LineageOS lineage-24.0)
+
+LineageOS's charging control (Settings > Battery > Charging control) needs the
+vendor.lineage.health IChargingControl HAL, which a stock Motorola vendor does not have, so on
+this generic system image the Lineage health service never started and the page was hidden.
+
+The stock vendor has its own HAL for the same job: motorola.hardware.health.IMotoHealth/default
+(AIDL V3). Its setChgLimits(lower, upper) writes the kernel's adaptive-charge thresholds
+(/sys/module/qpnp_adaptive_charge/parameters/{lower,upper}_limit): charging stops at "upper" and
+starts again at "lower". Stock Android 17 calls it from system_server (BatteryService), and the
+stock vendor SELinux policy makes system_server a client of that HAL, so no policy change is
+needed. Method order, transaction codes and argument order were read from the stock
+framework's generated proxy (services.jar), the accepted range from the vendor service
+(upper 1..100, lower below upper, negative upper = off).
+
+ChargingControlController falls back to a small adapter (MotoChargingControl) when the Lineage
+HAL is not declared. It offers LIMIT mode only, which LineageOS's Limit provider drives with the
+selected percentage and its recharge margin. "No limit" (100 %) is sent as off (-1, -1), not as
+a 100 % threshold, which would only resume charging at 0 %. Devices with the Lineage HAL are
+unaffected: the fallback runs only when that HAL is absent.
+
+Limit provider: with a HAL that offers LIMIT but not DEADLINE, the controller also uses the
+Limit provider for the Auto and Custom schedule modes, but the provider only implemented the
+percentage callback; the base class's time-based callback throws, in system_server, as soon as
+such a schedule is active while the phone charges. It now implements that callback: inside the
+scheduled window the battery is held at 80 %, and the limit is lifted early enough to reach
+100 % at the target time (Android's time-to-full estimate taken near the hold level, one hour
+if there is none, plus config_chargingControlTimeMargin).
+
+diff --git a/lineage/lib/main/java/org/lineageos/platform/internal/health/ChargingControlController.java b/lineage/lib/main/java/org/lineageos/platform/internal/health/ChargingControlController.java
+index b6a99ef..de5c82c 100644
+--- a/lineage/lib/main/java/org/lineageos/platform/internal/health/ChargingControlController.java
++++ b/lineage/lib/main/java/org/lineageos/platform/internal/health/ChargingControlController.java
+@@ -81,9 +81,14 @@ public class ChargingControlController extends LineageHealthFeature {
+         super(context, handler);
+ 
+         mContentResolver = mContext.getContentResolver();
+-        mChargingControl = IChargingControl.Stub.asInterface(
++        IChargingControl chargingControl = IChargingControl.Stub.asInterface(
+                 ServiceManager.waitForDeclaredService(
+                         IChargingControl.DESCRIPTOR + "/default"));
++        if (chargingControl == null) {
++            // Generic system image on a Motorola stock vendor: Motorola's own health HAL.
++            chargingControl = MotoChargingControl.get();
++        }
++        mChargingControl = chargingControl;
+ 
+         if (mChargingControl == null) {
+             Log.i(TAG, "Lineage Health HAL not found");
+diff --git a/lineage/lib/main/java/org/lineageos/platform/internal/health/MotoChargingControl.java b/lineage/lib/main/java/org/lineageos/platform/internal/health/MotoChargingControl.java
+new file mode 100644
+index 0000000..ce15580
+--- /dev/null
++++ b/lineage/lib/main/java/org/lineageos/platform/internal/health/MotoChargingControl.java
+@@ -0,0 +1,132 @@
++/*
++ * SPDX-License-Identifier: Apache-2.0
++ */
++
++package org.lineageos.platform.internal.health;
++
++import android.os.IBinder;
++import android.os.Parcel;
++import android.os.RemoteException;
++import android.os.ServiceManager;
++import android.util.Log;
++
++import vendor.lineage.health.ChargingControlSupportedMode;
++import vendor.lineage.health.ChargingLimitInfo;
++import vendor.lineage.health.IChargingControl;
++
++/**
++ * Charging control through Motorola's vendor HAL, for a generic system image on a Motorola
++ * device whose stock vendor has no vendor.lineage.health HAL.
++ *
++ * motorola.hardware.health.IMotoHealth/default (stock vendor, AIDL V3) has
++ * setChgLimits(lower, upper): the vendor service writes the two values to the kernel's
++ * adaptive-charge thresholds, so charging stops at "upper" percent and starts again at "lower".
++ * It accepts an upper limit of 1..100 and a lower limit below it; a negative upper limit turns
++ * the thresholds off (-1, the value the kernel starts with). Stock calls it from system_server
++ * (BatteryService), so the stock vendor's SELinux policy lets system_server reach it.
++ *
++ * Only LIMIT mode is offered. LineageOS's "no limit" (max 100, min 0) is sent as "off": a real
++ * 100 % threshold would only start charging again at 0 %.
++ */
++final class MotoChargingControl extends IChargingControl.Default {
++    private static final String TAG = "MotoChargingControl";
++
++    static final String SERVICE = "motorola.hardware.health.IMotoHealth/default";
++    private static final String DESCRIPTOR = "motorola.hardware.health.IMotoHealth";
++
++    // Transaction codes of IMotoHealth V3, as in the stock framework's generated proxy.
++    private static final int TRANSACTION_SET_CHG_LIMITS = IBinder.FIRST_CALL_TRANSACTION + 1;
++    private static final int TRANSACTION_GET_CHG_DISABLED = IBinder.FIRST_CALL_TRANSACTION + 2;
++
++    private static final int LIMIT_OFF = -1;
++
++    private final IBinder mHal;
++    private ChargingLimitInfo mLimit; // last limit that was set; null until then
++
++    private MotoChargingControl(IBinder hal) {
++        mHal = hal;
++    }
++
++    /** The adapter, or null when the device does not declare Motorola's health HAL. */
++    static IChargingControl get() {
++        if (!ServiceManager.isDeclared(SERVICE)) {
++            return null;
++        }
++        IBinder hal = ServiceManager.waitForDeclaredService(SERVICE);
++        if (hal == null) {
++            Log.e(TAG, SERVICE + " is declared but not available");
++            return null;
++        }
++        Log.i(TAG, "Charging control through " + SERVICE + " (limit mode)");
++        return new MotoChargingControl(hal);
++    }
++
++    @Override
++    public int getSupportedMode() {
++        return ChargingControlSupportedMode.LIMIT;
++    }
++
++    @Override
++    public ChargingLimitInfo getChargingLimit() {
++        ChargingLimitInfo info = new ChargingLimitInfo();
++        // Unknown until the first set: report a value no caller asks for, so the first
++        // request is always sent (the kernel starts without thresholds after every boot).
++        info.max = mLimit != null ? mLimit.max : LIMIT_OFF;
++        info.min = mLimit != null ? mLimit.min : LIMIT_OFF;
++        return info;
++    }
++
++    @Override
++    public void setChargingLimit(ChargingLimitInfo limit) throws RemoteException {
++        int upper = limit.max;
++        int lower = limit.min;
++        if (upper >= 100 || upper <= 0) {
++            upper = LIMIT_OFF;
++            lower = LIMIT_OFF;
++        } else {
++            lower = Math.max(0, Math.min(lower, upper - 1));
++        }
++        int result = call(TRANSACTION_SET_CHG_LIMITS, lower, upper);
++        if (result != 0) {
++            throw new RemoteException("setChgLimits(" + lower + ", " + upper + ") failed: " + result);
++        }
++        Log.i(TAG, "Charging thresholds set: stop at " + upper + "%, resume at " + lower + "%");
++        mLimit = new ChargingLimitInfo();
++        mLimit.max = limit.max;
++        mLimit.min = limit.min;
++    }
++
++    @Override
++    public boolean getChargingEnabled() throws RemoteException {
++        return call(TRANSACTION_GET_CHG_DISABLED) == 0;
++    }
++
++    @Override
++    public void setChargingEnabled(boolean enabled) {
++        Log.w(TAG, "setChargingEnabled is not supported");
++    }
++
++    @Override
++    public void setChargingDeadline(long deadline) {
++        Log.w(TAG, "setChargingDeadline is not supported");
++    }
++
++    private int call(int code, int... args) throws RemoteException {
++        Parcel data = Parcel.obtain(mHal);
++        Parcel reply = Parcel.obtain();
++        try {
++            data.writeInterfaceToken(DESCRIPTOR);
++            for (int a : args) {
++                data.writeInt(a);
++            }
++            if (!mHal.transact(code, data, reply, 0)) {
++                throw new RemoteException("IMotoHealth transaction " + code + " not implemented");
++            }
++            reply.readException();
++            return reply.readInt();
++        } finally {
++            reply.recycle();
++            data.recycle();
++        }
++    }
++}
+diff --git a/lineage/lib/main/java/org/lineageos/platform/internal/health/ccprovider/Limit.java b/lineage/lib/main/java/org/lineageos/platform/internal/health/ccprovider/Limit.java
+index fdc98a4..bf0df19 100644
+--- a/lineage/lib/main/java/org/lineageos/platform/internal/health/ccprovider/Limit.java
++++ b/lineage/lib/main/java/org/lineageos/platform/internal/health/ccprovider/Limit.java
+@@ -10,6 +10,7 @@ import static lineageos.health.HealthInterface.MODE_LIMIT;
+ import static lineageos.health.HealthInterface.MODE_MANUAL;
+ 
+ import android.content.Context;
++import android.os.BatteryManager;
+ import android.util.Log;
+ 
+ import org.lineageos.platform.internal.R;
+@@ -23,6 +24,15 @@ import java.io.PrintWriter;
+ public class Limit extends ChargingControlProvider {
+     protected final int mChargingLimitMargin;
+ 
++    // Auto and custom schedules. When the HAL offers a limit but no deadline, the controller
++    // uses this provider for those modes too, and the base class would throw. In the scheduled
++    // window the battery is held at HOLD_LEVEL; the limit is lifted early enough to reach 100 %
++    // at the target time.
++    private static final int HOLD_LEVEL = 80;
++    private static final long FALLBACK_TIME_TO_FULL_MS = 60 * 60 * 1000L;
++    private final long mChargingTimeMargin;
++    private long mTimeToFullMs = -1;
++
+     public Limit(IChargingControl chargingControl, Context context) {
+         super(context, chargingControl);
+ 
+@@ -34,6 +44,9 @@ public class Limit extends ChargingControlProvider {
+             mChargingLimitMargin = 1;
+         }
+         Log.i(TAG, "isBypassSupported: " + isBypassSupported);
++
++        mChargingTimeMargin = mContext.getResources().getInteger(
++                R.integer.config_chargingControlTimeMargin) * 60 * 1000L;
+     }
+ 
+     @Override
+@@ -42,6 +55,31 @@ public class Limit extends ChargingControlProvider {
+         return setChargingLimit(targetPct);
+     }
+ 
++    @Override
++    protected boolean onBatteryChanged(float batteryPct, long startTime, long targetTime,
++            int configMode) {
++        if (configMode != MODE_AUTO && configMode != MODE_MANUAL) {
++            Log.e(TAG, "Possible bug: onBatteryChanged called with unsupported mode: " + configMode);
++            return false;
++        }
++        final long now = System.currentTimeMillis();
++        // Time to full as Android estimates it while charging near the hold level; the
++        // estimate is not available once charging has stopped there, so the last one is kept.
++        BatteryManager bm = mContext.getSystemService(BatteryManager.class);
++        long estimate = bm != null ? bm.computeChargeTimeRemaining() : -1;
++        if (estimate > 0 && batteryPct >= HOLD_LEVEL - mChargingLimitMargin) {
++            mTimeToFullMs = estimate;
++        }
++        long timeToFull = (mTimeToFullMs > 0 ? mTimeToFullMs : FALLBACK_TIME_TO_FULL_MS)
++                + mChargingTimeMargin;
++        boolean hold = now >= startTime && targetTime - now > timeToFull;
++        Log.i(TAG, "Battery " + batteryPct + "%, " + (targetTime - now) / 60000 + " min to target, "
++                + "time to full " + timeToFull / 60000 + " min: " + (hold ? "hold at " + HOLD_LEVEL
++                + "%" : "no limit"));
++        setChargingLimit(hold ? HOLD_LEVEL : 100);
++        return hold;
++    }
++
+     @Override
+     protected void onEnabled() {
+         onReset();

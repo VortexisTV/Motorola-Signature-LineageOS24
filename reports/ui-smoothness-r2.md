@@ -58,7 +58,7 @@ Fixed-performance mode changes nothing (the power HAL does not act on it). The U
 expected cgroups (launcher `top-app`, SystemUI `foreground`; the vendor's uclamp settings are the
 stock ones).
 
-## Changes in r3 (built and checked statically, not yet measured)
+## Changes in r3 (owner's report on r3: "good on performance now"; not measured over adb)
 
 * `debug.sf.use_phase_offsets_as_durations=1` in `/product/etc/build.prop` (read after the vendor's =0):
   SurfaceFlinger uses the vendor's work durations (10.5 ms for itself, 13.67 ms for apps), so a
