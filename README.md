@@ -17,7 +17,6 @@ vendor no longer matches the phone since the owner installed stock Android 17.
 
 | | |
 |---|---|
-| [FEASIBILITY.md](FEASIBILITY.md) | step 1: does LineageOS 24 exist, is there a GSI target, why no TrebleDroid |
 | [FIRMWARE_A17.md](FIRMWARE_A17.md) | step 2: the A17 firmware analysed and compared with the A16 build |
 | [PORTING_A17.md](PORTING_A17.md) | step 3: everything re-derived, and keep/adapt/drop for each Android 16 fix |
 | [BUILDING.md](BUILDING.md) | environment, sync, firmware, build, validation, export, build log |
