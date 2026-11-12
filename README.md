@@ -1,6 +1,6 @@
-# Motorola Signature (vantage): LineageOS 24 (Android 17) system image
+# Motorola Signature (vantage): LineageOS 24 (Android 17) Custom ROM
 
-A LineageOS 24.0 generic system image for the Motorola Signature (codename `vantage`, product
+A LineageOS 24.0 system image for the Motorola Signature (codename `vantage`, product
 `vantage_g`, SM8845 "canoe"), with the vantage integration layer and microG, for the unchanged
 stock **Android 17** firmware A171WVH.21-16-16. It is the successor of the Android 16 port
 (`Motorola-Signature-AOSP16`, image r4, AOSP 16 + TrebleDroid), whose stock
