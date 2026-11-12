@@ -24,10 +24,6 @@ vendor no longer matches the phone since the owner installed stock Android 17.
 | [releases/](releases/) | notes per exported image: hashes, install steps, differences from the A16 image |
 | [vendor/motorola/vantage/microg/README.md](vendor/motorola/vantage/microg/README.md) | microG: what is included and how the signature check works |
 
-The Android 16 port's documents (TELEPHONY_PORT.md, CAMERA_PORT.md, the boot reports) remain
-the reference for why each piece of the integration layer exists; they are in the Android 16
-project and are not copied here.
-
 ## Architecture
 
 ```
