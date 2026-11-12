@@ -97,6 +97,21 @@ fastboot reboot
 
 The first boot may take longer than usual.
 
+## Install (Dynamic System Update)
+
+In Git Bash every adb command with a device path needs `MSYS_NO_PATHCONV=1`.
+
+```bash
+MSYS_NO_PATHCONV=1 adb push system_raw.gz /storage/emulated/0/Download/
+```
+
+```bash
+MSYS_NO_PATHCONV=1 adb shell am start-activity -n com.android.dynsystem/com.android.dynsystem.VerificationActivity -a android.os.image.action.START_INSTALL -d file:///storage/emulated/0/Download/system_raw.gz --el KEY_SYSTEM_SIZE 3005071360 --el KEY_USERDATA_SIZE 8589934592 --ez KEY_ONE_SHOT true
+```
+
+Confirm on the phone, wait for the notification to finish, tap **Restart**. To go back: reboot.
+On stock the notification offers **Discard**, which removes the guest.
+
 
 ## Layout
 
