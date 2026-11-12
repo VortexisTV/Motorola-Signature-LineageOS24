@@ -17,8 +17,8 @@ vendor no longer matches the phone since the owner installed stock Android 17.
 
 | | |
 |---|---|
-| [FIRMWARE_A17.md](FIRMWARE_A17.md) | step 2: the A17 firmware analysed and compared with the A16 build |
-| [PORTING_A17.md](PORTING_A17.md) | step 3: everything re-derived, and keep/adapt/drop for each Android 16 fix |
+| [FIRMWARE_A17.md](FIRMWARE_A17.md) | step 1: the A17 firmware analysed and compared with the A16 build |
+| [PORTING_A17.md](PORTING_A17.md) | step 2: everything re-derived, and keep/adapt/drop for each Android 16 fix |
 | [BUILDING.md](BUILDING.md) | environment, sync, firmware, build, validation, export, build log |
 | [COMPATIBILITY.md](COMPATIBILITY.md) | status per feature, with how each was verified |
 | [releases/](releases/) | notes per exported image: hashes, install steps, differences from the A16 image |
