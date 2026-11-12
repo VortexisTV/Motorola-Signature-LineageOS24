@@ -44,6 +44,9 @@ vendor no longer matches the phone since the owner installed stock Android 17.
 
 Place `system.img` and the matching stock `vbmeta.img` in the directory containing the Platform Tools, or run the commands from the directory containing those images with Platform Tools in your `PATH`.
 
+> [!CAUTION]
+> Remove your Google account before proceeding to prevent **Factory Reset Protection (FRP)**.
+
 ### 1. Enter the bootloader
 
 ```bash
